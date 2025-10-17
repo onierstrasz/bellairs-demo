@@ -89,8 +89,8 @@ BellairsPerson >> mondrianBorder [
 { #category : #mondrian }
 BellairsPerson >> mondrianNodeColor [
 	self workshops size = 1 ifTrue: [ ^ Color paleGreen ].
-	self workshops size < 4 ifTrue: [ ^ Color lightGreen ].
-	^ Color lightGreen darker
+	self workshops size < 4 ifTrue: [ ^ Color lightGreen slightlyDarker ].
+	^ Color lightGreen twiceDarker
 ]
 
 { #category : #mondrian }
