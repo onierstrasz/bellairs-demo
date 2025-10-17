@@ -18,7 +18,7 @@
 					"__type" : "time",
 					"time" : {
 						"__type" : "dateAndTime",
-						"dateAndTimeString" : "2025-10-17T12:09:25.498269+02:00"
+						"dateAndTimeString" : "2025-10-17T12:25:37.822357+02:00"
 					}
 				},
 				"editEmail" : {
@@ -29,20 +29,20 @@
 					"__type" : "time",
 					"time" : {
 						"__type" : "dateAndTime",
-						"dateAndTimeString" : "2025-10-17T12:29:36.812276+02:00"
+						"dateAndTimeString" : "2025-10-17T12:29:05.527389+02:00"
 					}
 				},
 				"uid" : {
 					"__type" : "uid",
-					"uidString" : "Hk8Kqrn9DQCHBrl4BZyZog=="
+					"uidString" : "ujZG5Ln9DQCpQEtkBZyZog=="
 				},
 				"paragraphStyle" : {
 					"__type" : "textStyle"
 				},
-				"string" : "[[Bellairs Workshop 2026]] "
+				"string" : "To do: "
 			},
 			{
-				"__type" : "textSnippet",
+				"__type" : "pharoSnippet",
 				"children" : {
 					"__type" : "snippets",
 					"items" : [ ]
@@ -55,7 +55,7 @@
 					"__type" : "time",
 					"time" : {
 						"__type" : "dateAndTime",
-						"dateAndTimeString" : "2025-10-17T12:29:44.56555+02:00"
+						"dateAndTimeString" : "2025-10-17T12:28:34.18063+02:00"
 					}
 				},
 				"editEmail" : {
@@ -66,54 +66,14 @@
 					"__type" : "time",
 					"time" : {
 						"__type" : "dateAndTime",
-						"dateAndTimeString" : "2025-10-17T12:29:44.56555+02:00"
+						"dateAndTimeString" : "2025-10-17T12:28:36.742056+02:00"
 					}
 				},
 				"uid" : {
 					"__type" : "uid",
-					"uidString" : "Ftlb47n9DQCoulM8BZyZog=="
+					"uidString" : "MTrJ7rn9DQCsxApkBZyZog=="
 				},
-				"paragraphStyle" : {
-					"__type" : "textStyle"
-				},
-				"string" : ""
-			},
-			{
-				"__type" : "textSnippet",
-				"children" : {
-					"__type" : "snippets",
-					"items" : [ ]
-				},
-				"createEmail" : {
-					"__type" : "email",
-					"emailString" : "<unknown>"
-				},
-				"createTime" : {
-					"__type" : "time",
-					"time" : {
-						"__type" : "dateAndTime",
-						"dateAndTimeString" : "2025-10-17T12:09:07.021449+02:00"
-					}
-				},
-				"editEmail" : {
-					"__type" : "email",
-					"emailString" : "<unknown>"
-				},
-				"editTime" : {
-					"__type" : "time",
-					"time" : {
-						"__type" : "dateAndTime",
-						"dateAndTimeString" : "2025-10-17T12:09:07.021449+02:00"
-					}
-				},
-				"uid" : {
-					"__type" : "uid",
-					"uidString" : "t8o3qbn9DQCHBeauBZyZog=="
-				},
-				"paragraphStyle" : {
-					"__type" : "textStyle"
-				},
-				"string" : ""
+				"code" : "BellairsExamples new bellairsRegistry"
 			}
 		]
 	},
@@ -125,7 +85,7 @@
 		"__type" : "time",
 		"time" : {
 			"__type" : "dateAndTime",
-			"dateAndTimeString" : "2025-10-17T12:09:15.729146+02:00"
+			"dateAndTimeString" : "2025-10-17T12:25:37.763825+02:00"
 		}
 	},
 	"editEmail" : {
@@ -136,15 +96,15 @@
 		"__type" : "time",
 		"time" : {
 			"__type" : "dateAndTime",
-			"dateAndTimeString" : "2025-10-17T12:09:15.729146+02:00"
+			"dateAndTimeString" : "2025-10-17T12:25:37.763825+02:00"
 		}
 	},
 	"pageType" : {
 		"__type" : "namedPage",
-		"title" : "Bellairs Workshop ToC"
+		"title" : "Bellairs Workshop 2026"
 	},
 	"uid" : {
 		"__type" : "uuid",
-		"uuid" : "b65237a9-b9fd-0d00-8704-ac12059c99a2"
+		"uuid" : "3f4e45e4-b9fd-0d00-a93f-1d91059c99a2"
 	}
 }
