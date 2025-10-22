@@ -180,7 +180,7 @@ TParticipationGroupViews >> workshopPersonsGraph: aMondrian [
 	| nodes |
 	nodes := self workshops , self persons.
 	aMondrian nodes
-		shape: [ :node | node mondrianNodeElement ];
+		shape: [ :node | node mondrianNodeElementHighlighting: self ];
 		with: nodes.
 	aMondrian edges connectToAll: #mondrianChildren.
 	aMondrian layout

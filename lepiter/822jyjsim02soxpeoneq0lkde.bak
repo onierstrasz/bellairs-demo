@@ -18,7 +18,7 @@
 					"__type" : "time",
 					"time" : {
 						"__type" : "dateAndTime",
-						"dateAndTimeString" : "2025-10-22T14:22:02.221309+02:00"
+						"dateAndTimeString" : "2025-10-22T14:22:23.69097+02:00"
 					}
 				},
 				"editEmail" : {
@@ -29,17 +29,17 @@
 					"__type" : "time",
 					"time" : {
 						"__type" : "dateAndTime",
-						"dateAndTimeString" : "2025-10-22T14:23:23.110247+02:00"
+						"dateAndTimeString" : "2025-10-22T14:25:23.276509+02:00"
 					}
 				},
 				"uid" : {
 					"__type" : "uid",
-					"uidString" : "+YjIGSD+DQCCOtwFCe8ZiA=="
+					"uidString" : "+CgQGyD+DQCCwuMhCe8ZiA=="
 				},
 				"paragraphStyle" : {
 					"__type" : "textStyle"
 				},
-				"string" : "[[Bellairs Workshop 2026]] "
+				"string" : "The Bellairs SE workshops are a series of Software Engineering events held in Barbados at the [Bellairs Research Institute](https://bellairs2026.ece.mcgill.ca/location.htm) of McGill University.\nThe 2026 workshop is on [Continuous Software Engineering](https://bellairs2026.ece.mcgill.ca)."
 			},
 			{
 				"__type" : "textSnippet",
@@ -55,7 +55,7 @@
 					"__type" : "time",
 					"time" : {
 						"__type" : "dateAndTime",
-						"dateAndTimeString" : "2025-10-17T12:09:25.498269+02:00"
+						"dateAndTimeString" : "2025-10-22T14:25:40.98228+02:00"
 					}
 				},
 				"editEmail" : {
@@ -66,17 +66,51 @@
 					"__type" : "time",
 					"time" : {
 						"__type" : "dateAndTime",
-						"dateAndTimeString" : "2025-10-22T14:22:50.785715+02:00"
+						"dateAndTimeString" : "2025-10-22T14:27:34.860763+02:00"
 					}
 				},
 				"uid" : {
 					"__type" : "uid",
-					"uidString" : "Hk8Kqrn9DQCHBrl4BZyZog=="
+					"uidString" : "oAoBJiD+DQCG5+s6Ce8ZiA=="
 				},
 				"paragraphStyle" : {
 					"__type" : "textStyle"
 				},
-				"string" : "[[Bellairs Case Study]] "
+				"string" : "Presentations are short (5 minutes). To quickly present GT and Moldable Development, we have implemented the [[Bellairs Case Study]] which analyzes the participant data of previous events from the website, to create explorable domain entities. To see this, just inspect:"
+			},
+			{
+				"__type" : "pharoSnippet",
+				"children" : {
+					"__type" : "snippets",
+					"items" : [ ]
+				},
+				"createEmail" : {
+					"__type" : "email",
+					"emailString" : "<unknown>"
+				},
+				"createTime" : {
+					"__type" : "time",
+					"time" : {
+						"__type" : "dateAndTime",
+						"dateAndTimeString" : "2025-10-22T14:27:20.768709+02:00"
+					}
+				},
+				"editEmail" : {
+					"__type" : "email",
+					"emailString" : "<unknown>"
+				},
+				"editTime" : {
+					"__type" : "time",
+					"time" : {
+						"__type" : "dateAndTime",
+						"dateAndTimeString" : "2025-10-22T14:27:23.439859+02:00"
+					}
+				},
+				"uid" : {
+					"__type" : "uid",
+					"uidString" : "FzXFLCD+DQCNekVmCe8ZiA=="
+				},
+				"code" : "BellairsExamples new bellairsRegistry"
 			},
 			{
 				"__type" : "textSnippet",
@@ -92,7 +126,7 @@
 					"__type" : "time",
 					"time" : {
 						"__type" : "dateAndTime",
-						"dateAndTimeString" : "2025-10-22T14:20:45.494947+02:00"
+						"dateAndTimeString" : "2025-10-22T14:27:37.344893+02:00"
 					}
 				},
 				"editEmail" : {
@@ -103,128 +137,17 @@
 					"__type" : "time",
 					"time" : {
 						"__type" : "dateAndTime",
-						"dateAndTimeString" : "2025-10-22T14:20:54.75061+02:00"
+						"dateAndTimeString" : "2025-10-22T14:35:03.403955+02:00"
 					}
 				},
 				"uid" : {
 					"__type" : "uid",
-					"uidString" : "Q8k1FSD+DQCBrA4pCe8ZiA=="
+					"uidString" : "4CPCLSD+DQCN8/u1Ce8ZiA=="
 				},
 				"paragraphStyle" : {
 					"__type" : "textStyle"
 				},
-				"string" : "[[Bellairs To Do list]] "
-			},
-			{
-				"__type" : "textSnippet",
-				"children" : {
-					"__type" : "snippets",
-					"items" : [ ]
-				},
-				"createEmail" : {
-					"__type" : "email",
-					"emailString" : "<unknown>"
-				},
-				"createTime" : {
-					"__type" : "time",
-					"time" : {
-						"__type" : "dateAndTime",
-						"dateAndTimeString" : "2025-10-22T14:36:51.34221+02:00"
-					}
-				},
-				"editEmail" : {
-					"__type" : "email",
-					"emailString" : "<unknown>"
-				},
-				"editTime" : {
-					"__type" : "time",
-					"time" : {
-						"__type" : "dateAndTime",
-						"dateAndTimeString" : "2025-10-22T14:37:03.539264+02:00"
-					}
-				},
-				"uid" : {
-					"__type" : "uid",
-					"uidString" : "pHHHTiD+DQCVw+m+Ce8ZiA=="
-				},
-				"paragraphStyle" : {
-					"__type" : "textStyle"
-				},
-				"string" : "[[Bel"
-			},
-			{
-				"__type" : "textSnippet",
-				"children" : {
-					"__type" : "snippets",
-					"items" : [ ]
-				},
-				"createEmail" : {
-					"__type" : "email",
-					"emailString" : "<unknown>"
-				},
-				"createTime" : {
-					"__type" : "time",
-					"time" : {
-						"__type" : "dateAndTime",
-						"dateAndTimeString" : "2025-10-17T12:29:44.56555+02:00"
-					}
-				},
-				"editEmail" : {
-					"__type" : "email",
-					"emailString" : "<unknown>"
-				},
-				"editTime" : {
-					"__type" : "time",
-					"time" : {
-						"__type" : "dateAndTime",
-						"dateAndTimeString" : "2025-10-17T12:29:44.56555+02:00"
-					}
-				},
-				"uid" : {
-					"__type" : "uid",
-					"uidString" : "Ftlb47n9DQCoulM8BZyZog=="
-				},
-				"paragraphStyle" : {
-					"__type" : "textStyle"
-				},
-				"string" : ""
-			},
-			{
-				"__type" : "textSnippet",
-				"children" : {
-					"__type" : "snippets",
-					"items" : [ ]
-				},
-				"createEmail" : {
-					"__type" : "email",
-					"emailString" : "<unknown>"
-				},
-				"createTime" : {
-					"__type" : "time",
-					"time" : {
-						"__type" : "dateAndTime",
-						"dateAndTimeString" : "2025-10-17T12:09:07.021449+02:00"
-					}
-				},
-				"editEmail" : {
-					"__type" : "email",
-					"emailString" : "<unknown>"
-				},
-				"editTime" : {
-					"__type" : "time",
-					"time" : {
-						"__type" : "dateAndTime",
-						"dateAndTimeString" : "2025-10-17T12:09:07.021449+02:00"
-					}
-				},
-				"uid" : {
-					"__type" : "uid",
-					"uidString" : "t8o3qbn9DQCHBeauBZyZog=="
-				},
-				"paragraphStyle" : {
-					"__type" : "textStyle"
-				},
-				"string" : ""
+				"string" : "To regenerate the example, i.e., if the workshop partic"
 			}
 		]
 	},
@@ -236,7 +159,7 @@
 		"__type" : "time",
 		"time" : {
 			"__type" : "dateAndTime",
-			"dateAndTimeString" : "2025-10-17T12:09:15.729146+02:00"
+			"dateAndTimeString" : "2025-10-22T14:22:23.591275+02:00"
 		}
 	},
 	"editEmail" : {
@@ -247,15 +170,15 @@
 		"__type" : "time",
 		"time" : {
 			"__type" : "dateAndTime",
-			"dateAndTimeString" : "2025-10-17T12:09:15.729146+02:00"
+			"dateAndTimeString" : "2025-10-22T14:23:23.077241+02:00"
 		}
 	},
 	"pageType" : {
 		"__type" : "namedPage",
-		"title" : "Bellairs Workshop ToC"
+		"title" : "Bellairs Workshop 2026"
 	},
 	"uid" : {
 		"__type" : "uuid",
-		"uuid" : "b65237a9-b9fd-0d00-8704-ac12059c99a2"
+		"uuid" : "62a20e1b-20fe-0d00-82c1-871a09ef1988"
 	}
 }

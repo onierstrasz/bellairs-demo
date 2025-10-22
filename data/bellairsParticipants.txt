@@ -499,20 +499,17 @@
 		</ul>
 		<h1>Participants</h1>
 		<ul>
-<!--			<li><a target="_committee" href="https://pascalarchambault.ca">Pascal Archambault</a>, Universit&eacute; de Montr&eacute;al, Canada</li>
-			<li><a target="_committee" href="https://www.durham.ac.uk/staff/nelly-bencomo/">Nelly Bencomo</a>, Durham University, UK</li>
-			<li><a target="_committee" href="https://model-engineering.info/">Dominik Bork</a>, Technische Universit&auml;t Wien, Austria</li>
-			<li><a target="_committee" href="https://webusers.i3s.unice.fr/~deantoni/">Julien Deantoni</a>, INRIA / Universit&eacute; C&ocirc;te d'Azur, France </li>
-			<li><a target="_committee" href="https://kevindelcourt.github.io/">Kevin Delcourt</a>, Universit&eacute; de Montr&eacute;al, Canada</li>
+			<li><a target="_committee" href="https://jmbruel.netlify.app/">Jean-Michel Bruel</a>, Universit&eacute; de Toulouse, France</li>
+			<li><a target="_committee" href="https://tdegueul.github.io/">Thomas Degueule</a>, CNRS, France</li>
+			<li><a target="_committee" href="https://perso.eleves.ens-rennes.fr/people/jean-baptiste.doderlein/">Jean-Baptiste D&ouml;derlein</a>, IRISA / Universit&eacute; de Rennes 1, France</li>
 			<li><a target="_committee" href="http://www.irisa.fr/prive/jezequel/">Jean-Marc Jézéquel</a>, IRISA / Université de Rennes 1, France</li>
-			<li><a target="_committee" href="https://djeminy.github.io/">J&ouml;rg Kienzle</a>, Associate Professor, McGill University, Canada</li>
-			<li><a target="_committee" href="https://in.linkedin.com/in/vinayvkulkarni">Vinay Kulkarni</a>, Tata Consultancy Services, India</li>
 			<li><a target="_committee" href="https://shanemcintosh.org/">Shane McIntosh</a>, University of Waterloo, Canada</li>
 			<li><a target="_committee" href="https://judithmichael.github.io/">Judith Michael</a>, RWTH Aachen, Germany</li>
-			<li><a target="_committee" href="https://qperez.github.io/">Quentin Perez</a>, IRISA / INSA Rennes, France</li>
+			<li><a target="_committee" href="https://www.monperrus.net/martin/">Martin Monperrus</a>, Kungliga Tekniska högskolan (KTH), Sweden</li>
+			<li><a target="_committee" href="https://blogs.ubc.ca/gailcmurphy/">Gail Murphy</a>, University of British Columbia, Canada</li>
+			<li><a target="_committee" href="https://www.oscar.nierstrasz.org/">Oscar Nierstrasz</a>, feenk.com, Switzerland</li>
+			<li><a target="_committee" href="http://randrianaina.org/">Georges Aaron Randrianaina</a>, University of Waterloo, Canada</li>
 			<li><a target="_committee" href="http://www.iro.umontreal.ca/~sahraouh/">Houari Sahraoui</a>, Universit&eacute; de Montr&eacute;al, Canada</li>
-			<li><a target="_committee" href="https://www2.dmst.aueb.gr/dds/">Diomidis Spinellis</a>, Οικονομικό Πανεπιστήμιο Αθηνών (Athens University of Economics and Business), Greece</li>
-			<li><a target="_committee" href="http://www.iro.umontreal.ca/~syriani">Eugene Syriani</a>, Université de Montréal, Canada</li> -->
 		</ul>
 	</div>
 	<div id="bottomMenu">

@@ -6,6 +6,8 @@ I represent a person who has participated in one or more Bellairs workshops as e
 Class {
 	#name : #BellairsPerson,
 	#superclass : #AbstractBellairsEntity,
+	#traits : 'TParticipationGroupViews',
+	#classTraits : 'TParticipationGroupViews classTrait',
 	#category : #'BellairsDemo-Model'
 }
 
@@ -80,10 +82,12 @@ BellairsPerson >> isParticipant [
 ]
 
 { #category : #mondrian }
-BellairsPerson >> mondrianBorder [
-	^ self isOrganizer
-		ifTrue: [ BlBorder paint: Color red width: 2 ]
-		ifFalse: [ BlBorder paint: Color black width: 1 ]
+BellairsPerson >> mondrianBorderHighlighting: aNode [
+	^ self = aNode
+		ifTrue: [ BlBorder paint: Color blue width: 3 ]
+		ifFalse: [ self isOrganizer
+				ifTrue: [ BlBorder paint: Color red width: 2 ]
+				ifFalse: [ BlBorder paint: Color black width: 1 ] ]
 ]
 
 { #category : #mondrian }
@@ -94,15 +98,22 @@ BellairsPerson >> mondrianNodeColor [
 ]
 
 { #category : #mondrian }
-BellairsPerson >> mondrianNodeElement [
+BellairsPerson >> mondrianNodeElementHighlighting: aNode [
 	^ BlTextElement new
 		text: self initials asRopedText;
 		padding: (BlInsets all: 12);
-		border: self mondrianBorder;
+		border: (self mondrianBorderHighlighting:aNode);
 		background: self mondrianNodeColor;
 		aptitude: (BrGlamorousWithExplicitTooltipAptitude text: self name);
 		geometry: BlCircleGeometry new;
 		yourself
+]
+
+{ #category : #accessing }
+BellairsPerson >> persons [
+	"For the graph we want to see all the other persons who attended the same workshops."
+
+	^ (self workshops flatCollect: #persons) copyWithoutDuplicates
 ]
 
 { #category : #accessing }

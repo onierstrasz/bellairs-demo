@@ -63,6 +63,13 @@ BellairsWorkshop >> initializeFrom: aDictionary [
 ]
 
 { #category : #mondrian }
+BellairsWorkshop >> mondrianBorderHighlighting: aNode [
+	^ self = aNode
+		ifTrue: [ BlBorder paint: Color blue width: 3 ]
+		ifFalse: [ BlBorder paint: Color black width: 1 ]
+]
+
+{ #category : #mondrian }
 BellairsWorkshop >> mondrianChildren [
 	^ self persons
 ]
@@ -73,11 +80,11 @@ BellairsWorkshop >> mondrianNodeColor [
 ]
 
 { #category : #'as yet unclassified' }
-BellairsWorkshop >> mondrianNodeElement [
+BellairsWorkshop >> mondrianNodeElementHighlighting: aNode [
 	^ BlTextElement new
 		text: self year asRopedText;
 		padding: (BlInsets all: 5);
-		border: self mondrianBorder;
+		border: (self mondrianBorderHighlighting:aNode);
 		background: self mondrianNodeColor;
 		aptitude: (BrGlamorousWithExplicitTooltipAptitude text: self name)
 ]
@@ -90,11 +97,6 @@ BellairsWorkshop >> organizers [
 { #category : #requirement }
 BellairsWorkshop >> participations [
 	^ super participations
-]
-
-{ #category : #querying }
-BellairsWorkshop >> persons [
-	^ super persons
 ]
 
 { #category : #views }
@@ -127,7 +129,10 @@ BellairsWorkshop >> workshop [
 
 { #category : #accessing }
 BellairsWorkshop >> workshops [
-	^ {self}
+	"For the graph, we want to see not only this workshop,
+	but also all the other workshops the participants have been to."
+
+	^ (self persons flatCollect: #workshops) copyWithoutDuplicates
 ]
 
 { #category : #accessing }

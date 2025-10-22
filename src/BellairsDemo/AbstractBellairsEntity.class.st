@@ -156,7 +156,7 @@ AbstractBellairsEntity >> json [
 ]
 
 { #category : #mondrian }
-AbstractBellairsEntity >> mondrianBorder [
+AbstractBellairsEntity >> mondrianBorderHighlighting: aNode [
 	^ BlBorder paint: Color black width: 1
 ]
 
@@ -166,15 +166,20 @@ AbstractBellairsEntity >> mondrianChildren [
 ]
 
 { #category : #mondrian }
+AbstractBellairsEntity >> mondrianHighlightBorder [
+	^ BlBorder paint: Color black width: 1
+]
+
+{ #category : #mondrian }
 AbstractBellairsEntity >> mondrianNodeColor [
 	^ Color paleBlue
 ]
 
 { #category : #mondrian }
-AbstractBellairsEntity >> mondrianNodeElement [
+AbstractBellairsEntity >> mondrianNodeElementHighlighting: aNode [
 	^ BlElement new
 		size: 10 @ 10;
-		border: self mondrianBorder;
+		border: (self mondrianBorderHighlighting:aNode);
 		background: self mondrianNodeColor;
 		aptitude: (BrGlamorousWithExplicitTooltipAptitude text: self name)
 ]

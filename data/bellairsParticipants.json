@@ -960,44 +960,28 @@
 		"affiliation" : "McGill University"
 	},
 	{
-		"person" : "Pascal Archambault",
-		"url" : "https://pascalarchambault.ca",
-		"role" : "Participant",
-		"country" : "Canada",
-		"workshop" : "2026 Continuous Software Engineering at Bellairs 2026",
-		"affiliation" : "Université de Montréal"
-	},
-	{
-		"person" : "Nelly Bencomo",
-		"url" : "https://www.durham.ac.uk/staff/nelly-bencomo/",
-		"role" : "Participant",
-		"country" : "UK",
-		"workshop" : "2026 Continuous Software Engineering at Bellairs 2026",
-		"affiliation" : "Durham University"
-	},
-	{
-		"person" : "Dominik Bork",
-		"url" : "https://model-engineering.info/",
-		"role" : "Participant",
-		"country" : "Austria",
-		"workshop" : "2026 Continuous Software Engineering at Bellairs 2026",
-		"affiliation" : "Technische Universität Wien"
-	},
-	{
-		"person" : "Julien Deantoni",
-		"url" : "https://webusers.i3s.unice.fr/~deantoni/",
+		"person" : "Jean-Michel Bruel",
+		"url" : "https://jmbruel.netlify.app/",
 		"role" : "Participant",
 		"country" : "France",
 		"workshop" : "2026 Continuous Software Engineering at Bellairs 2026",
-		"affiliation" : "INRIA / Université Côte d'Azur"
+		"affiliation" : "Université de Toulouse"
 	},
 	{
-		"person" : "Kevin Delcourt",
-		"url" : "https://kevindelcourt.github.io/",
+		"person" : "Thomas Degueule",
+		"url" : "https://tdegueul.github.io/",
 		"role" : "Participant",
-		"country" : "Canada",
+		"country" : "France",
 		"workshop" : "2026 Continuous Software Engineering at Bellairs 2026",
-		"affiliation" : "Université de Montréal"
+		"affiliation" : "CNRS"
+	},
+	{
+		"person" : "Jean-Baptiste Döderlein",
+		"url" : "https://perso.eleves.ens-rennes.fr/people/jean-baptiste.doderlein/",
+		"role" : "Participant",
+		"country" : "France",
+		"workshop" : "2026 Continuous Software Engineering at Bellairs 2026",
+		"affiliation" : "IRISA / Université de Rennes 1"
 	},
 	{
 		"person" : "Jean-Marc Jézéquel",
@@ -1006,22 +990,6 @@
 		"country" : "France",
 		"workshop" : "2026 Continuous Software Engineering at Bellairs 2026",
 		"affiliation" : "IRISA / Université de Rennes 1"
-	},
-	{
-		"person" : "Jörg Kienzle",
-		"url" : "https://djeminy.github.io/",
-		"role" : "Participant",
-		"country" : "Canada",
-		"workshop" : "2026 Continuous Software Engineering at Bellairs 2026",
-		"affiliation" : "McGill University"
-	},
-	{
-		"person" : "Vinay Kulkarni",
-		"url" : "https://in.linkedin.com/in/vinayvkulkarni",
-		"role" : "Participant",
-		"country" : "India",
-		"workshop" : "2026 Continuous Software Engineering at Bellairs 2026",
-		"affiliation" : "Tata Consultancy Services"
 	},
 	{
 		"person" : "Shane McIntosh",
@@ -1040,32 +1008,40 @@
 		"affiliation" : "RWTH Aachen"
 	},
 	{
-		"person" : "Quentin Perez",
-		"url" : "https://qperez.github.io/",
+		"person" : "Martin Monperrus",
+		"url" : "https://www.monperrus.net/martin/",
 		"role" : "Participant",
-		"country" : "France",
+		"country" : "Sweden",
 		"workshop" : "2026 Continuous Software Engineering at Bellairs 2026",
-		"affiliation" : "IRISA / INSA Rennes"
+		"affiliation" : "Kungliga Tekniska högskolan (KTH)"
+	},
+	{
+		"person" : "Gail Murphy",
+		"url" : "https://blogs.ubc.ca/gailcmurphy/",
+		"role" : "Participant",
+		"country" : "Canada",
+		"workshop" : "2026 Continuous Software Engineering at Bellairs 2026",
+		"affiliation" : "University of British Columbia"
+	},
+	{
+		"person" : "Oscar Nierstrasz",
+		"url" : "https://www.oscar.nierstrasz.org/",
+		"role" : "Participant",
+		"country" : "Switzerland",
+		"workshop" : "2026 Continuous Software Engineering at Bellairs 2026",
+		"affiliation" : "feenk.com"
+	},
+	{
+		"person" : "Georges Aaron Randrianaina",
+		"url" : "http://randrianaina.org/",
+		"role" : "Participant",
+		"country" : "Canada",
+		"workshop" : "2026 Continuous Software Engineering at Bellairs 2026",
+		"affiliation" : "University of Waterloo"
 	},
 	{
 		"person" : "Houari Sahraoui",
 		"url" : "http://www.iro.umontreal.ca/~sahraouh/",
-		"role" : "Participant",
-		"country" : "Canada",
-		"workshop" : "2026 Continuous Software Engineering at Bellairs 2026",
-		"affiliation" : "Université de Montréal"
-	},
-	{
-		"person" : "Diomidis Spinellis",
-		"url" : "https://www2.dmst.aueb.gr/dds/",
-		"role" : "Participant",
-		"country" : "Greece",
-		"workshop" : "2026 Continuous Software Engineering at Bellairs 2026",
-		"affiliation" : "Οικονομικό Πανεπιστήμιο Αθηνών (Athens University of Economics and Business)"
-	},
-	{
-		"person" : "Eugene Syriani",
-		"url" : "http://www.iro.umontreal.ca/~syriani",
 		"role" : "Participant",
 		"country" : "Canada",
 		"workshop" : "2026 Continuous Software Engineering at Bellairs 2026",
