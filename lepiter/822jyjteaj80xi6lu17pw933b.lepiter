@@ -68,7 +68,7 @@
 								"__type" : "time",
 								"time" : {
 									"__type" : "dateAndTime",
-									"dateAndTimeString" : "2025-10-22T14:37:57.281962+02:00"
+									"dateAndTimeString" : "2025-10-22T15:28:03.472677+02:00"
 								}
 							},
 							"uid" : {
@@ -78,44 +78,7 @@
 							"paragraphStyle" : {
 								"__type" : "textStyle"
 							},
-							"string" : "Prepare slideshow and abstract ..."
-						},
-						{
-							"__type" : "textSnippet",
-							"children" : {
-								"__type" : "snippets",
-								"items" : [ ]
-							},
-							"createEmail" : {
-								"__type" : "email",
-								"emailString" : "<unknown>"
-							},
-							"createTime" : {
-								"__type" : "time",
-								"time" : {
-									"__type" : "dateAndTime",
-									"dateAndTimeString" : "2025-10-22T14:20:56.661259+02:00"
-								}
-							},
-							"editEmail" : {
-								"__type" : "email",
-								"emailString" : "<unknown>"
-							},
-							"editTime" : {
-								"__type" : "time",
-								"time" : {
-									"__type" : "dateAndTime",
-									"dateAndTimeString" : "2025-10-22T14:21:32.981077+02:00"
-								}
-							},
-							"uid" : {
-								"__type" : "uid",
-								"uidString" : "KzHgFSD+DQCCKrdtCe8ZiA=="
-							},
-							"paragraphStyle" : {
-								"__type" : "textStyle"
-							},
-							"string" : "Turn *Role* into a domain entity?"
+							"string" : "Prepare slideshow and abstract ...\nTurn *Role* into a domain entity?\nMake Registry a subclass of ParticipationGroup.\nGenerate a Scenery class diagram."
 						}
 					]
 				},
