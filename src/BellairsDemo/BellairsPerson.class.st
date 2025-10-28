@@ -48,7 +48,17 @@ BellairsPerson >> gtOpenWebBrowserActionFor: anAction [
 		priority: 86;
 		tooltip: 'Open web page';
 		icon: BrGlamorousVectorIcons link;
-		action: [ :aButton :aTab | WebBrowser openOn: self urls first asZnUrl ]
+		action: [ :aButton :aTab | WebBrowser openOn: self webUrl ]
+]
+
+{ #category : #views }
+BellairsPerson >> gtWebpageViewFor: aView [
+	<gtView>
+	self urls ifEmpty: [ ^ aView empty ].
+	^ aView forward
+		title: 'Webpage';
+		object: [ self webUrl ];
+		view: #gtWebpageFor:
 ]
 
 { #category : #views }
@@ -150,4 +160,9 @@ BellairsPerson >> summary [
 { #category : #accessing }
 BellairsPerson >> surname [
 	^ self name substrings last
+]
+
+{ #category : #querying }
+BellairsPerson >> webUrl [
+	^ self urls first asZnUrl
 ]

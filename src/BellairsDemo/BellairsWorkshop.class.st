@@ -57,6 +57,15 @@ BellairsWorkshop >> gtPersonsFor: aView [
 		view: #gtPersonsFor:
 ]
 
+{ #category : #views }
+BellairsWorkshop >> gtWebpageViewFor: aView [
+	<gtView>
+	^ aView forward
+		title: 'Webpage';
+		object: [ self webUrl ];
+		view: #gtWebpageFor:
+]
+
 { #category : #initialization }
 BellairsWorkshop >> initializeFrom: aDictionary [
 	name := aDictionary at: 'workshop'
