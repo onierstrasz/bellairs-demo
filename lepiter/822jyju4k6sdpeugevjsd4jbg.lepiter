@@ -29,7 +29,7 @@
 					"__type" : "time",
 					"time" : {
 						"__type" : "dateAndTime",
-						"dateAndTimeString" : "2025-10-22T15:04:57.57657+02:00"
+						"dateAndTimeString" : "2025-11-12T15:00:42.125819+01:00"
 					}
 				},
 				"uid" : {
@@ -39,7 +39,7 @@
 				"paragraphStyle" : {
 					"__type" : "textStyle"
 				},
-				"string" : "\nNB 5 min presentations!\n\nStart with the idea of using GT and Moldable Development to explain software systems.\n\nAlways motivate by the questions!\nWhat do we want to know about Bellairs workshop?\nWe see many web pages, but don't have an overview.\n\nWe use PP to extract clean data from the pages as a JSON, and then use that to build a domain model.\n\nIt is similar for other systems:\nanalyzing data — write a PP parser\nanalyzing source code — use a SmaCC parser\nanalyzing web-hosted data — connect to server\nanalyzing live language system — a use language bridge\n"
+				"string" : "The 2026 [workshop  schedule](https://bellairs2026.ece.mcgill.ca/schedule.htm).\n\nNB 5 min presentations!\n\nStart with the idea of using GT and Moldable Development to explain software systems.\n\nAlways motivate by the questions!\nWhat do we want to know about Bellairs workshop?\nWe see many web pages, but don't have an overview.\n\nWe use PP to extract clean data from the pages as a JSON, and then use that to build a domain model.\n\nIt is similar for other systems:\nanalyzing data — write a PP parser\nanalyzing source code — use a SmaCC parser\nanalyzing web-hosted data — connect to server\nanalyzing live language system — a use language bridge\n"
 			},
 			{
 				"__type" : "pharoSnippet",
@@ -74,6 +74,77 @@
 					"uidString" : "K7NksyD+DQCbmkp+Ce8ZiA=="
 				},
 				"code" : "Bellairs2026Slides new"
+			},
+			{
+				"__type" : "textSnippet",
+				"children" : {
+					"__type" : "snippets",
+					"items" : [ ]
+				},
+				"createEmail" : {
+					"__type" : "email",
+					"emailString" : "<unknown>"
+				},
+				"createTime" : {
+					"__type" : "time",
+					"time" : {
+						"__type" : "dateAndTime",
+						"dateAndTimeString" : "2025-11-12T16:12:24.044054+01:00"
+					}
+				},
+				"editEmail" : {
+					"__type" : "email",
+					"emailString" : "<unknown>"
+				},
+				"editTime" : {
+					"__type" : "time",
+					"time" : {
+						"__type" : "dateAndTime",
+						"dateAndTimeString" : "2025-11-12T16:12:46.251526+01:00"
+					}
+				},
+				"uid" : {
+					"__type" : "uid",
+					"uidString" : "URK47cj/DQChwheADXtWog=="
+				},
+				"paragraphStyle" : {
+					"__type" : "textStyle"
+				},
+				"string" : "***Caveat:*** there seem to be some issues when exploring the registry from within slides ..."
+			},
+			{
+				"__type" : "pharoSnippet",
+				"children" : {
+					"__type" : "snippets",
+					"items" : [ ]
+				},
+				"createEmail" : {
+					"__type" : "email",
+					"emailString" : "<unknown>"
+				},
+				"createTime" : {
+					"__type" : "time",
+					"time" : {
+						"__type" : "dateAndTime",
+						"dateAndTimeString" : "2025-11-12T16:13:00.98277+01:00"
+					}
+				},
+				"editEmail" : {
+					"__type" : "email",
+					"emailString" : "<unknown>"
+				},
+				"editTime" : {
+					"__type" : "time",
+					"time" : {
+						"__type" : "dateAndTime",
+						"dateAndTimeString" : "2025-11-12T16:13:15.245505+01:00"
+					}
+				},
+				"uid" : {
+					"__type" : "uid",
+					"uidString" : "Crbr78j/DQCjoILmDXtWog=="
+				},
+				"code" : "BellairsExamples new bellairsRegistry"
 			}
 		]
 	},

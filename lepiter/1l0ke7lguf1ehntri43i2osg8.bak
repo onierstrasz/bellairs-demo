@@ -18,7 +18,7 @@
 					"__type" : "time",
 					"time" : {
 						"__type" : "dateAndTime",
-						"dateAndTimeString" : "2025-10-22T14:22:02.221309+02:00"
+						"dateAndTimeString" : "2025-11-12T15:36:54.591258+01:00"
 					}
 				},
 				"editEmail" : {
@@ -29,61 +29,23 @@
 					"__type" : "time",
 					"time" : {
 						"__type" : "dateAndTime",
-						"dateAndTimeString" : "2025-10-22T14:23:23.110247+02:00"
+						"dateAndTimeString" : "2025-11-12T15:39:22.376615+01:00"
 					}
 				},
 				"uid" : {
 					"__type" : "uid",
-					"uidString" : "+YjIGSD+DQCCOtwFCe8ZiA=="
+					"uidString" : "NDPLbsj/DQC5ptKSCHXAGg=="
 				},
 				"paragraphStyle" : {
 					"__type" : "textStyle"
 				},
-				"string" : "[[Bellairs Workshop 2026]] "
+				"string" : "Extracted from [[Bellairs Case Study]]"
 			},
 			{
-				"__type" : "textSnippet",
+				"__type" : "pharoSnippet",
 				"children" : {
 					"__type" : "snippets",
-					"items" : [
-						{
-							"__type" : "textSnippet",
-							"children" : {
-								"__type" : "snippets",
-								"items" : [ ]
-							},
-							"createEmail" : {
-								"__type" : "email",
-								"emailString" : "<unknown>"
-							},
-							"createTime" : {
-								"__type" : "time",
-								"time" : {
-									"__type" : "dateAndTime",
-									"dateAndTimeString" : "2025-11-12T15:37:24.673221+01:00"
-								}
-							},
-							"editEmail" : {
-								"__type" : "email",
-								"emailString" : "<unknown>"
-							},
-							"editTime" : {
-								"__type" : "time",
-								"time" : {
-									"__type" : "dateAndTime",
-									"dateAndTimeString" : "2025-11-12T15:37:27.0354+01:00"
-								}
-							},
-							"uid" : {
-								"__type" : "uid",
-								"uidString" : "ZTSWcMj/DQC5qEoiCHXAGg=="
-							},
-							"paragraphStyle" : {
-								"__type" : "textStyle"
-							},
-							"string" : "[[Minimal parsing example]]"
-						}
-					]
+					"items" : [ ]
 				},
 				"createEmail" : {
 					"__type" : "email",
@@ -93,7 +55,7 @@
 					"__type" : "time",
 					"time" : {
 						"__type" : "dateAndTime",
-						"dateAndTimeString" : "2025-10-17T12:09:25.498269+02:00"
+						"dateAndTimeString" : "2025-11-12T15:39:23.979125+01:00"
 					}
 				},
 				"editEmail" : {
@@ -104,17 +66,14 @@
 					"__type" : "time",
 					"time" : {
 						"__type" : "dateAndTime",
-						"dateAndTimeString" : "2025-10-22T14:22:50.785715+02:00"
+						"dateAndTimeString" : "2025-11-12T15:39:40.325219+01:00"
 					}
 				},
 				"uid" : {
 					"__type" : "uid",
-					"uidString" : "Hk8Kqrn9DQCHBrl4BZyZog=="
+					"uidString" : "lq2yd8j/DQC6SeeNCHXAGg=="
 				},
-				"paragraphStyle" : {
-					"__type" : "textStyle"
-				},
-				"string" : "[[Bellairs Case Study]] "
+				"code" : "allLines := BellairsParserExamples new allLines"
 			},
 			{
 				"__type" : "textSnippet",
@@ -130,7 +89,7 @@
 					"__type" : "time",
 					"time" : {
 						"__type" : "dateAndTime",
-						"dateAndTimeString" : "2025-10-22T14:20:45.494947+02:00"
+						"dateAndTimeString" : "2025-11-12T15:37:42.540075+01:00"
 					}
 				},
 				"editEmail" : {
@@ -141,86 +100,12 @@
 					"__type" : "time",
 					"time" : {
 						"__type" : "dateAndTime",
-						"dateAndTimeString" : "2025-10-22T14:20:54.75061+02:00"
+						"dateAndTimeString" : "2025-11-12T15:37:42.540075+01:00"
 					}
 				},
 				"uid" : {
 					"__type" : "uid",
-					"uidString" : "Q8k1FSD+DQCBrA4pCe8ZiA=="
-				},
-				"paragraphStyle" : {
-					"__type" : "textStyle"
-				},
-				"string" : "[[Bellairs To Do list]] "
-			},
-			{
-				"__type" : "textSnippet",
-				"children" : {
-					"__type" : "snippets",
-					"items" : [ ]
-				},
-				"createEmail" : {
-					"__type" : "email",
-					"emailString" : "<unknown>"
-				},
-				"createTime" : {
-					"__type" : "time",
-					"time" : {
-						"__type" : "dateAndTime",
-						"dateAndTimeString" : "2025-10-22T14:36:51.34221+02:00"
-					}
-				},
-				"editEmail" : {
-					"__type" : "email",
-					"emailString" : "<unknown>"
-				},
-				"editTime" : {
-					"__type" : "time",
-					"time" : {
-						"__type" : "dateAndTime",
-						"dateAndTimeString" : "2025-10-22T14:37:16.913158+02:00"
-					}
-				},
-				"uid" : {
-					"__type" : "uid",
-					"uidString" : "pHHHTiD+DQCVw+m+Ce8ZiA=="
-				},
-				"paragraphStyle" : {
-					"__type" : "textStyle"
-				},
-				"string" : "[[Bellairs 2026 slideshow]] "
-			},
-			{
-				"__type" : "textSnippet",
-				"children" : {
-					"__type" : "snippets",
-					"items" : [ ]
-				},
-				"createEmail" : {
-					"__type" : "email",
-					"emailString" : "<unknown>"
-				},
-				"createTime" : {
-					"__type" : "time",
-					"time" : {
-						"__type" : "dateAndTime",
-						"dateAndTimeString" : "2025-10-17T12:29:44.56555+02:00"
-					}
-				},
-				"editEmail" : {
-					"__type" : "email",
-					"emailString" : "<unknown>"
-				},
-				"editTime" : {
-					"__type" : "time",
-					"time" : {
-						"__type" : "dateAndTime",
-						"dateAndTimeString" : "2025-10-17T12:29:44.56555+02:00"
-					}
-				},
-				"uid" : {
-					"__type" : "uid",
-					"uidString" : "Ftlb47n9DQCoulM8BZyZog=="
+					"uidString" : "PNKmccj/DQC6Mp5YCHXAGg=="
 				},
 				"paragraphStyle" : {
 					"__type" : "textStyle"
@@ -228,7 +113,7 @@
 				"string" : ""
 			},
 			{
-				"__type" : "textSnippet",
+				"__type" : "pharoSnippet",
 				"children" : {
 					"__type" : "snippets",
 					"items" : [ ]
@@ -241,7 +126,7 @@
 					"__type" : "time",
 					"time" : {
 						"__type" : "dateAndTime",
-						"dateAndTimeString" : "2025-10-17T12:09:07.021449+02:00"
+						"dateAndTimeString" : "2025-11-12T15:38:18.993047+01:00"
 					}
 				},
 				"editEmail" : {
@@ -252,17 +137,82 @@
 					"__type" : "time",
 					"time" : {
 						"__type" : "dateAndTime",
-						"dateAndTimeString" : "2025-10-17T12:09:07.021449+02:00"
+						"dateAndTimeString" : "2025-11-12T15:42:39.042092+01:00"
 					}
 				},
 				"uid" : {
 					"__type" : "uid",
-					"uidString" : "t8o3qbn9DQCHBeauBZyZog=="
+					"uidString" : "uhHTc8j/DQC6NmbNCHXAGg=="
 				},
-				"paragraphStyle" : {
-					"__type" : "textStyle"
+				"code" : "role := nil.\rworkshop := nil.\rworkshopTitle := ('<!-- all content &copy; ' asPParser\r\t\t, (' -->' asPParser not , #any asPParser) star flatten , ' -->' asPParser)\r\t\t==> [ :nodes | \r\t\t\tworkshop := nodes second trim.\r\t\t\tnil ].\rorganizerRole := '<h1>Organizers</h1>' asPParser trim\r\t\t==> [ :nodes | \r\t\t\trole := 'Organizer'.\r\t\t\tnil ].\rparticipantRole := '<h1>Confirmed Participants</h1>' asPParser trim\r\t\t==> [ :nodes | \r\t\t\trole := 'Participant'.\r\t\t\tnil ].\rperson := ('<!--' asPParser trim optional\r\t\t, '<li><a target=\"_committee\" href=\"' asPParser trim\r\t\t, ('https://' asPParser / 'http://' asPParser , $\" asPParser negate plus) flatten\r\t\t, '\">' asPParser , $< asPParser negate plus flatten\r\t\t, ('</a>' asPParser , $, asPParser optional) trim\r\t\t, $, asPParser negate plus flatten , ',' asPParser trim\r\t\t, $< asPParser negate plus flatten\r\t\t, ('</li>' asPParser trim , '-->' asPParser trim optional))\r\t\t==> [ :nodes | \r\t\t\t{'url' -> nodes third.\r\t\t\t\t'name' -> nodes fifth.\r\t\t\t\t'institution' -> nodes seventh.\r\t\t\t\t'country' -> nodes ninth} asDictionary ].\rpersonSimple := ('<li><a' asPParser not trim , '<li>' asPParser trim\r\t\t, $, asPParser negate plus flatten , $, asPParser trim\r\t\t, $, asPParser negate plus flatten , $, asPParser trim\r\t\t, $< asPParser negate plus flatten , '</li>' asPParser)\r\t\t==> [ :nodes | \r\t\t\t{'name' -> nodes third.\r\t\t\t\t'institution' -> nodes fifth.\r\t\t\t\t'country' -> nodes seventh} asDictionary ].\rignore := #any asPParser star ==> [ :nodes | nil ].\rbellairsLine := workshopTitle / organizerRole / participantRole / person\r\t\t/ personSimple / ignore"
+			},
+			{
+				"__type" : "pharoSnippet",
+				"children" : {
+					"__type" : "snippets",
+					"items" : [ ]
 				},
-				"string" : ""
+				"createEmail" : {
+					"__type" : "email",
+					"emailString" : "<unknown>"
+				},
+				"createTime" : {
+					"__type" : "time",
+					"time" : {
+						"__type" : "dateAndTime",
+						"dateAndTimeString" : "2025-11-12T15:41:57.938113+01:00"
+					}
+				},
+				"editEmail" : {
+					"__type" : "email",
+					"emailString" : "<unknown>"
+				},
+				"editTime" : {
+					"__type" : "time",
+					"time" : {
+						"__type" : "dateAndTime",
+						"dateAndTimeString" : "2025-11-12T15:42:33.631348+01:00"
+					}
+				},
+				"uid" : {
+					"__type" : "uid",
+					"uidString" : "/NjfgMj/DQC64/JfCHXAGg=="
+				},
+				"code" : "parser := BellairsParser new"
+			},
+			{
+				"__type" : "pharoSnippet",
+				"children" : {
+					"__type" : "snippets",
+					"items" : [ ]
+				},
+				"createEmail" : {
+					"__type" : "email",
+					"emailString" : "<unknown>"
+				},
+				"createTime" : {
+					"__type" : "time",
+					"time" : {
+						"__type" : "dateAndTime",
+						"dateAndTimeString" : "2025-11-12T15:41:18.512351+01:00"
+					}
+				},
+				"editEmail" : {
+					"__type" : "email",
+					"emailString" : "<unknown>"
+				},
+				"editTime" : {
+					"__type" : "time",
+					"time" : {
+						"__type" : "dateAndTime",
+						"dateAndTimeString" : "2025-11-12T15:41:57.942004+01:00"
+					}
+				},
+				"uid" : {
+					"__type" : "uid",
+					"uidString" : "v02Gfsj/DQC6t+BFCHXAGg=="
+				},
+				"code" : "\tjson := (allLines\r\t\t\tcollect: [ :line | parser parse: line ]\r\t\t\tthenSelect: #notNil)."
 			}
 		]
 	},
@@ -274,7 +224,7 @@
 		"__type" : "time",
 		"time" : {
 			"__type" : "dateAndTime",
-			"dateAndTimeString" : "2025-10-17T12:09:15.729146+02:00"
+			"dateAndTimeString" : "2025-11-12T15:37:08.665501+01:00"
 		}
 	},
 	"editEmail" : {
@@ -285,15 +235,15 @@
 		"__type" : "time",
 		"time" : {
 			"__type" : "dateAndTime",
-			"dateAndTimeString" : "2025-10-17T12:09:15.729146+02:00"
+			"dateAndTimeString" : "2025-11-12T15:37:08.665501+01:00"
 		}
 	},
 	"pageType" : {
 		"__type" : "namedPage",
-		"title" : "Bellairs Workshop ToC"
+		"title" : "Minimal parsing example"
 	},
 	"uid" : {
 		"__type" : "uuid",
-		"uuid" : "b65237a9-b9fd-0d00-8704-ac12059c99a2"
+		"uuid" : "08a0c86e-c8ff-0d00-b9a5-13720875c01a"
 	}
 }

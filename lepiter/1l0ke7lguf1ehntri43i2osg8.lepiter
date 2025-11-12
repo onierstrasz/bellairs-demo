@@ -18,7 +18,7 @@
 					"__type" : "time",
 					"time" : {
 						"__type" : "dateAndTime",
-						"dateAndTimeString" : "2025-10-22T14:37:20.305089+02:00"
+						"dateAndTimeString" : "2025-11-12T15:36:54.591258+01:00"
 					}
 				},
 				"editEmail" : {
@@ -29,51 +29,17 @@
 					"__type" : "time",
 					"time" : {
 						"__type" : "dateAndTime",
-						"dateAndTimeString" : "2025-11-12T15:00:42.125819+01:00"
+						"dateAndTimeString" : "2025-11-12T15:39:22.376615+01:00"
 					}
 				},
 				"uid" : {
 					"__type" : "uid",
-					"uidString" : "3WeBUCD+DQCWpelQCe8ZiA=="
+					"uidString" : "NDPLbsj/DQC5ptKSCHXAGg=="
 				},
 				"paragraphStyle" : {
 					"__type" : "textStyle"
 				},
-				"string" : "The 2026 [workshop  schedule](https://bellairs2026.ece.mcgill.ca/schedule.htm).\n\nNB 5 min presentations!\n\nStart with the idea of using GT and Moldable Development to explain software systems.\n\nAlways motivate by the questions!\nWhat do we want to know about Bellairs workshop?\nWe see many web pages, but don't have an overview.\n\nWe use PP to extract clean data from the pages as a JSON, and then use that to build a domain model.\n\nIt is similar for other systems:\nanalyzing data — write a PP parser\nanalyzing source code — use a SmaCC parser\nanalyzing web-hosted data — connect to server\nanalyzing live language system — a use language bridge\n"
-			},
-			{
-				"__type" : "pharoSnippet",
-				"children" : {
-					"__type" : "snippets",
-					"items" : [ ]
-				},
-				"createEmail" : {
-					"__type" : "email",
-					"emailString" : "<unknown>"
-				},
-				"createTime" : {
-					"__type" : "time",
-					"time" : {
-						"__type" : "dateAndTime",
-						"dateAndTimeString" : "2025-10-22T15:04:59.368162+02:00"
-					}
-				},
-				"editEmail" : {
-					"__type" : "email",
-					"emailString" : "<unknown>"
-				},
-				"editTime" : {
-					"__type" : "time",
-					"time" : {
-						"__type" : "dateAndTime",
-						"dateAndTimeString" : "2025-10-22T15:05:04.728569+02:00"
-					}
-				},
-				"uid" : {
-					"__type" : "uid",
-					"uidString" : "K7NksyD+DQCbmkp+Ce8ZiA=="
-				},
-				"code" : "Bellairs2026Slides new"
+				"string" : "Extracted from [[Bellairs Case Study]]"
 			},
 			{
 				"__type" : "textSnippet",
@@ -89,7 +55,7 @@
 					"__type" : "time",
 					"time" : {
 						"__type" : "dateAndTime",
-						"dateAndTimeString" : "2025-11-12T16:12:24.044054+01:00"
+						"dateAndTimeString" : "2025-11-12T15:37:42.540075+01:00"
 					}
 				},
 				"editEmail" : {
@@ -100,17 +66,17 @@
 					"__type" : "time",
 					"time" : {
 						"__type" : "dateAndTime",
-						"dateAndTimeString" : "2025-11-12T16:12:46.251526+01:00"
+						"dateAndTimeString" : "2025-11-12T15:37:42.540075+01:00"
 					}
 				},
 				"uid" : {
 					"__type" : "uid",
-					"uidString" : "URK47cj/DQChwheADXtWog=="
+					"uidString" : "PNKmccj/DQC6Mp5YCHXAGg=="
 				},
 				"paragraphStyle" : {
 					"__type" : "textStyle"
 				},
-				"string" : "***Caveat:*** there seem to be some issues when exploring the registry from within slides ..."
+				"string" : ""
 			},
 			{
 				"__type" : "pharoSnippet",
@@ -126,7 +92,7 @@
 					"__type" : "time",
 					"time" : {
 						"__type" : "dateAndTime",
-						"dateAndTimeString" : "2025-11-12T16:13:00.98277+01:00"
+						"dateAndTimeString" : "2025-11-12T15:39:23.979125+01:00"
 					}
 				},
 				"editEmail" : {
@@ -137,14 +103,82 @@
 					"__type" : "time",
 					"time" : {
 						"__type" : "dateAndTime",
-						"dateAndTimeString" : "2025-11-12T16:13:00.98277+01:00"
+						"dateAndTimeString" : "2025-11-12T15:42:46.443921+01:00"
 					}
 				},
 				"uid" : {
 					"__type" : "uid",
-					"uidString" : "Crbr78j/DQCjoILmDXtWog=="
+					"uidString" : "lq2yd8j/DQC6SeeNCHXAGg=="
 				},
-				"code" : ""
+				"code" : "allLines := BellairsParserExamples new allLines"
+			},
+			{
+				"__type" : "pharoSnippet",
+				"children" : {
+					"__type" : "snippets",
+					"items" : [ ]
+				},
+				"createEmail" : {
+					"__type" : "email",
+					"emailString" : "<unknown>"
+				},
+				"createTime" : {
+					"__type" : "time",
+					"time" : {
+						"__type" : "dateAndTime",
+						"dateAndTimeString" : "2025-11-12T15:41:57.938113+01:00"
+					}
+				},
+				"editEmail" : {
+					"__type" : "email",
+					"emailString" : "<unknown>"
+				},
+				"editTime" : {
+					"__type" : "time",
+					"time" : {
+						"__type" : "dateAndTime",
+						"dateAndTimeString" : "2025-11-12T15:42:33.631348+01:00"
+					}
+				},
+				"uid" : {
+					"__type" : "uid",
+					"uidString" : "/NjfgMj/DQC64/JfCHXAGg=="
+				},
+				"code" : "parser := BellairsParser new"
+			},
+			{
+				"__type" : "pharoSnippet",
+				"children" : {
+					"__type" : "snippets",
+					"items" : [ ]
+				},
+				"createEmail" : {
+					"__type" : "email",
+					"emailString" : "<unknown>"
+				},
+				"createTime" : {
+					"__type" : "time",
+					"time" : {
+						"__type" : "dateAndTime",
+						"dateAndTimeString" : "2025-11-12T15:41:18.512351+01:00"
+					}
+				},
+				"editEmail" : {
+					"__type" : "email",
+					"emailString" : "<unknown>"
+				},
+				"editTime" : {
+					"__type" : "time",
+					"time" : {
+						"__type" : "dateAndTime",
+						"dateAndTimeString" : "2025-11-12T15:42:59.694397+01:00"
+					}
+				},
+				"uid" : {
+					"__type" : "uid",
+					"uidString" : "v02Gfsj/DQC6t+BFCHXAGg=="
+				},
+				"code" : "json := (allLines collect: [ :line | parser parse: line ] thenSelect: #notNil) asGtJson"
 			}
 		]
 	},
@@ -156,7 +190,7 @@
 		"__type" : "time",
 		"time" : {
 			"__type" : "dateAndTime",
-			"dateAndTimeString" : "2025-10-22T14:37:20.231608+02:00"
+			"dateAndTimeString" : "2025-11-12T15:37:08.665501+01:00"
 		}
 	},
 	"editEmail" : {
@@ -167,15 +201,15 @@
 		"__type" : "time",
 		"time" : {
 			"__type" : "dateAndTime",
-			"dateAndTimeString" : "2025-10-22T14:37:20.231608+02:00"
+			"dateAndTimeString" : "2025-11-12T15:37:08.665501+01:00"
 		}
 	},
 	"pageType" : {
 		"__type" : "namedPage",
-		"title" : "Bellairs 2026 slideshow"
+		"title" : "Minimal parsing example"
 	},
 	"uid" : {
 		"__type" : "uuid",
-		"uuid" : "cc478050-20fe-0d00-96a4-2d5009ef1988"
+		"uuid" : "08a0c86e-c8ff-0d00-b9a5-13720875c01a"
 	}
 }
