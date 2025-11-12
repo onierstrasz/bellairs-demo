@@ -1016,6 +1016,14 @@
 		"affiliation" : "Kungliga Tekniska högskolan (KTH)"
 	},
 	{
+		"person" : "Sébastien Mosser",
+		"url" : "https://mosser.github.io/",
+		"role" : "Participant",
+		"country" : "Canada",
+		"workshop" : "2026 Continuous Software Engineering at Bellairs 2026",
+		"affiliation" : "McMaster University"
+	},
+	{
 		"person" : "Gail Murphy",
 		"url" : "https://blogs.ubc.ca/gailcmurphy/",
 		"role" : "Participant",
@@ -1046,5 +1054,13 @@
 		"country" : "Canada",
 		"workshop" : "2026 Continuous Software Engineering at Bellairs 2026",
 		"affiliation" : "Université de Montréal"
+	},
+	{
+		"person" : "Marie Salomon",
+		"url" : "https://hasel.dev/team/marie-salomon/",
+		"role" : "Participant",
+		"country" : "Canada",
+		"workshop" : "2026 Continuous Software Engineering at Bellairs 2026",
+		"affiliation" : "University of British Columbia"
 	}
 ]

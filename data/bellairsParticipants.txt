@@ -506,10 +506,12 @@
 			<li><a target="_committee" href="https://shanemcintosh.org/">Shane McIntosh</a>, University of Waterloo, Canada</li>
 			<li><a target="_committee" href="https://judithmichael.github.io/">Judith Michael</a>, RWTH Aachen, Germany</li>
 			<li><a target="_committee" href="https://www.monperrus.net/martin/">Martin Monperrus</a>, Kungliga Tekniska högskolan (KTH), Sweden</li>
+			<li><a target="_committee" href="https://mosser.github.io/">S&eacute;bastien Mosser</a>, McMaster University, Canada</li>
 			<li><a target="_committee" href="https://blogs.ubc.ca/gailcmurphy/">Gail Murphy</a>, University of British Columbia, Canada</li>
 			<li><a target="_committee" href="https://www.oscar.nierstrasz.org/">Oscar Nierstrasz</a>, feenk.com, Switzerland</li>
 			<li><a target="_committee" href="http://randrianaina.org/">Georges Aaron Randrianaina</a>, University of Waterloo, Canada</li>
 			<li><a target="_committee" href="http://www.iro.umontreal.ca/~sahraouh/">Houari Sahraoui</a>, Universit&eacute; de Montr&eacute;al, Canada</li>
+			<li><a target="_committee" href="https://hasel.dev/team/marie-salomon/">Marie Salomon</a>, University of British Columbia, Canada</li>
 		</ul>
 	</div>
 	<div id="bottomMenu">
