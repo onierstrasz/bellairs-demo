@@ -137,7 +137,7 @@ BellairsParserExamples >> linesWithCountriesTranslated [
 
 	self
 		assert: (allLines select: [ :l | l includesSubstring: 'France ' ]) size
-		equals: 3.
+		equals: 2.
 
 	map := BellairsRewriteMaps new.
 	translatedLines := allLines

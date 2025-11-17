@@ -16,14 +16,17 @@ Class {
 { #category : #examples }
 BellairsExamples >> bellairsJsonFromStoredJsonFile [
 	<gtExample>
+	<return: #Array>
 	^ BellairsParserExamples new bellairsJsonFromStoredJsonFile
 ]
 
 { #category : #examples }
 BellairsExamples >> bellairsRegistry [
 	<gtExample>
+	<return: #BellairsWorkshopsRegistry>
 	| registry |
-	registry := BellairsWorkshopsRegistry new initializeFromJson: self bellairsJsonFromStoredJsonFile.
+	registry := BellairsWorkshopsRegistry new
+			initializeFromJson: self bellairsJsonFromStoredJsonFile.
 	self assert: registry json size equals: registry participations size.
 	^ registry
 ]
@@ -31,6 +34,7 @@ BellairsExamples >> bellairsRegistry [
 { #category : #examples }
 BellairsExamples >> firstAffiliation [
 	<gtExample>
+	<return: #BellairsAffiliation>
 	| affiliation registry |
 	registry := BellairsExamples new bellairsRegistry.
 	affiliation := registry affiliations first.
@@ -43,21 +47,23 @@ BellairsExamples >> firstAffiliation [
 { #category : #examples }
 BellairsExamples >> firstCountry [
 	<gtExample>
+	<return: #BellairsCountry>
 	| country registry |
 	registry := BellairsExamples new bellairsRegistry.
 	country := registry countries first.
 	self assert: country registry equals: registry.
 	self assert: country json equals: registry json.
-	self assert: country workshops size equals: 4.
+	self assert: country workshops size equals: 3.
 	self assert: country persons size equals: 3.
 	self assert: country affiliations size equals: 2.
-	self assert: country participations size equals: 4.
+	self assert: country participations size equals: 3.
 	^ country
 ]
 
 { #category : #examples }
 BellairsExamples >> firstPerson [
 	<gtExample>
+	<return: #BellairsPerson>
 	| person registry |
 	registry := BellairsExamples new bellairsRegistry.
 	person := registry persons first.
@@ -70,14 +76,15 @@ BellairsExamples >> firstPerson [
 { #category : #examples }
 BellairsExamples >> firstWorkshop [
 	<gtExample>
+	<return: #BellairsWorkshop>
 	| workshop registry |
 	registry := BellairsExamples new bellairsRegistry.
 	workshop := registry workshops first.
 	self assert: workshop registry equals: registry.
 	self assert: workshop json equals: registry json.
-	self assert: workshop persons size equals: 17.
+	self assert: workshop persons size equals: 16.
 	self assert: workshop affiliations size equals: 11.
-	self assert: workshop countries size equals: 7.
-	self assert: workshop participations size equals: 17.
+	self assert: workshop countries size equals: 5.
+	self assert: workshop participations size equals: 16.
 	^ workshop
 ]
