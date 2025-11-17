@@ -55,40 +55,6 @@
 					"__type" : "time",
 					"time" : {
 						"__type" : "dateAndTime",
-						"dateAndTimeString" : "2025-11-17T10:07:59.902798+01:00"
-					}
-				},
-				"editEmail" : {
-					"__type" : "email",
-					"emailString" : "<unknown>"
-				},
-				"editTime" : {
-					"__type" : "time",
-					"time" : {
-						"__type" : "dateAndTime",
-						"dateAndTimeString" : "2025-11-17T10:09:58.046751+01:00"
-					}
-				},
-				"uid" : {
-					"__type" : "uid",
-					"uidString" : "aaC4aygADgCc6f1nADTf3w=="
-				},
-				"code" : "GtScenery withPackageNamed: #BellairsDemo"
-			},
-			{
-				"__type" : "pharoSnippet",
-				"children" : {
-					"__type" : "snippets",
-					"items" : [ ]
-				},
-				"createEmail" : {
-					"__type" : "email",
-					"emailString" : "<unknown>"
-				},
-				"createTime" : {
-					"__type" : "time",
-					"time" : {
-						"__type" : "dateAndTime",
 						"dateAndTimeString" : "2025-11-17T10:48:15.662979+01:00"
 					}
 				},
@@ -100,14 +66,14 @@
 					"__type" : "time",
 					"time" : {
 						"__type" : "dateAndTime",
-						"dateAndTimeString" : "2025-11-17T10:48:16.052617+01:00"
+						"dateAndTimeString" : "2025-11-17T11:19:41.18397+01:00"
 					}
 				},
 				"uid" : {
 					"__type" : "uid",
 					"uidString" : "AzK2+ygADgCpZjz2ADTf3w=="
 				},
-				"code" : "| scenery item1 item2 item3 item4 item5 item6 |\rscenery := GtScenery new.\ritem1 := scenery\r\t\taddSceneryItem: (GtSceneryPackageInspectorStencil new packageName: #BellairsDemo) asItem.\ritem1 position: -332.0 @ -139.0.\ritem1 extent: 300.0 @ 400.0.\ritem2 := scenery\r\t\taddSceneryItem: (GtSceneryUMLClassStencil new\r\t\t\t\tlabel: #BellairsWorkshopsRegistry;\r\t\t\t\texampleMethodName: 'BellairsExamples>>#bellairsRegistry') asItem.\ritem2 position: 308.0 @ 79.0.\ritem2 extent: 277.0240478515625 @ 40.0.\ritem3 := scenery\r\t\taddSceneryItem: (GtSceneryUMLClassStencil new\r\t\t\t\tlabel: #BellairsAffiliation;\r\t\t\t\texampleMethodName: 'BellairsExamples>>#firstAffiliation') asItem.\ritem3 position: 68.0 @ -139.0.\ritem3 extent: 181.0480194091797 @ 40.0.\ritem4 := scenery\r\t\taddSceneryItem: (GtSceneryUMLClassStencil new\r\t\t\t\tlabel: #BellairsWorkshop;\r\t\t\t\texampleMethodName: 'BellairsExamples>>#firstWorkshop') asItem.\ritem4 position: 389.0 @ -68.0.\ritem4 extent: 186.0640106201172 @ 40.0.\ritem5 := scenery\r\t\taddSceneryItem: (GtSceneryUMLClassStencil new\r\t\t\t\tlabel: #BellairsCountry;\r\t\t\t\texampleMethodName: 'BellairsExamples>>#firstCountry') asItem.\ritem5 position: 2.0 @ 29.0.\ritem5 extent: 165.68801879882813 @ 40.0.\ritem6 := scenery\r\t\taddSceneryItem: (GtSceneryUMLClassStencil new\r\t\t\t\tlabel: #BellairsPerson;\r\t\t\t\texampleMethodName: 'BellairsExamples>>#firstPerson') asItem.\ritem6 position: 59.0 @ 142.0.\ritem6 extent: 153.88002014160156 @ 40.0.\rscenery"
+				"code" : "Bellairs2026Slides new umlScenery"
 			},
 			{
 				"__type" : "textSnippet",
