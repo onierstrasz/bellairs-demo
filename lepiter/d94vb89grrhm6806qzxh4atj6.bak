@@ -142,7 +142,7 @@
 								"__type" : "time",
 								"time" : {
 									"__type" : "dateAndTime",
-									"dateAndTimeString" : "2025-11-17T14:15:12.207687+01:00"
+									"dateAndTimeString" : "2025-11-17T14:17:15.617864+01:00"
 								}
 							},
 							"uid" : {
@@ -152,7 +152,44 @@
 							"paragraphStyle" : {
 								"__type" : "textStyle"
 							},
-							"string" : "How to generate a class hierarchy?\nCollect all classes already in the diagram (if any). (We have these already.)\nAll classes with examples as witnesses. (We want these for sure)\nAll classes in packages in the diagram."
+							"string" : "How to generate a class hierarchy?\nCollect all classes already in the diagram (if any). (We have these already.)\nAll classes with examples as witnesses. (We want these for sure)\nAll classes in packages in the diagram, or in packages of classes in the diagram."
+						},
+						{
+							"__type" : "textSnippet",
+							"children" : {
+								"__type" : "snippets",
+								"items" : [ ]
+							},
+							"createEmail" : {
+								"__type" : "email",
+								"emailString" : "<unknown>"
+							},
+							"createTime" : {
+								"__type" : "time",
+								"time" : {
+									"__type" : "dateAndTime",
+									"dateAndTimeString" : "2025-11-17T17:07:18.778597+01:00"
+								}
+							},
+							"editEmail" : {
+								"__type" : "email",
+								"emailString" : "<unknown>"
+							},
+							"editTime" : {
+								"__type" : "time",
+								"time" : {
+									"__type" : "dateAndTime",
+									"dateAndTimeString" : "2025-11-17T17:09:36.647855+01:00"
+								}
+							},
+							"uid" : {
+								"__type" : "uid",
+								"uidString" : "yJdORy4ADgC0mXRhCgvmdw=="
+							},
+							"paragraphStyle" : {
+								"__type" : "textStyle"
+							},
+							"string" : "Given some existing packages or classse\nAdd classes. \n(i) "
 						}
 					]
 				},
