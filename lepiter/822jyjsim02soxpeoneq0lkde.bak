@@ -137,7 +137,7 @@
 					"__type" : "time",
 					"time" : {
 						"__type" : "dateAndTime",
-						"dateAndTimeString" : "2025-10-22T14:35:03.403955+02:00"
+						"dateAndTimeString" : "2025-10-22T14:35:17.462958+02:00"
 					}
 				},
 				"uid" : {
@@ -147,7 +147,7 @@
 				"paragraphStyle" : {
 					"__type" : "textStyle"
 				},
-				"string" : "To regenerate the example, i.e., if the workshop partic"
+				"string" : "To regenerate the example, i.e., if the workshop participants are updated, just run the example {{gtMethod:name=BellairsParserExamples>>#writeParticipantsToCachedFile}}. "
 			}
 		]
 	},
