@@ -55,40 +55,6 @@
 					"__type" : "time",
 					"time" : {
 						"__type" : "dateAndTime",
-						"dateAndTimeString" : "2025-11-17T10:07:59.902798+01:00"
-					}
-				},
-				"editEmail" : {
-					"__type" : "email",
-					"emailString" : "<unknown>"
-				},
-				"editTime" : {
-					"__type" : "time",
-					"time" : {
-						"__type" : "dateAndTime",
-						"dateAndTimeString" : "2025-11-17T10:09:58.046751+01:00"
-					}
-				},
-				"uid" : {
-					"__type" : "uid",
-					"uidString" : "aaC4aygADgCc6f1nADTf3w=="
-				},
-				"code" : "GtScenery withPackageNamed: #BellairsDemo"
-			},
-			{
-				"__type" : "pharoSnippet",
-				"children" : {
-					"__type" : "snippets",
-					"items" : [ ]
-				},
-				"createEmail" : {
-					"__type" : "email",
-					"emailString" : "<unknown>"
-				},
-				"createTime" : {
-					"__type" : "time",
-					"time" : {
-						"__type" : "dateAndTime",
 						"dateAndTimeString" : "2025-11-17T10:48:15.662979+01:00"
 					}
 				},
@@ -100,14 +66,14 @@
 					"__type" : "time",
 					"time" : {
 						"__type" : "dateAndTime",
-						"dateAndTimeString" : "2025-11-17T11:19:20.083463+01:00"
+						"dateAndTimeString" : "2025-11-17T11:19:41.18397+01:00"
 					}
 				},
 				"uid" : {
 					"__type" : "uid",
 					"uidString" : "AzK2+ygADgCpZjz2ADTf3w=="
 				},
-				"code" : "Bellairs2026Slides>>#umlScenery"
+				"code" : "Bellairs2026Slides new umlScenery"
 			},
 			{
 				"__type" : "textSnippet",
@@ -150,6 +116,43 @@
 								"__type" : "textStyle"
 							},
 							"string" : "Start with the package.\nMine return: pragmas, if they are missing.\nCollect examples with return values *in this package*."
+						},
+						{
+							"__type" : "textSnippet",
+							"children" : {
+								"__type" : "snippets",
+								"items" : [ ]
+							},
+							"createEmail" : {
+								"__type" : "email",
+								"emailString" : "<unknown>"
+							},
+							"createTime" : {
+								"__type" : "time",
+								"time" : {
+									"__type" : "dateAndTime",
+									"dateAndTimeString" : "2025-11-17T14:12:54.95737+01:00"
+								}
+							},
+							"editEmail" : {
+								"__type" : "email",
+								"emailString" : "<unknown>"
+							},
+							"editTime" : {
+								"__type" : "time",
+								"time" : {
+									"__type" : "dateAndTime",
+									"dateAndTimeString" : "2025-11-17T14:15:12.207687+01:00"
+								}
+							},
+							"uid" : {
+								"__type" : "uid",
+								"uidString" : "RYFg1SsADgCKuvcOApqmtQ=="
+							},
+							"paragraphStyle" : {
+								"__type" : "textStyle"
+							},
+							"string" : "How to generate a class hierarchy?\nCollect all classes already in the diagram (if any). (We have these already.)\nAll classes with examples as witnesses. (We want these for sure)\nAll classes in packages in the diagram."
 						}
 					]
 				},

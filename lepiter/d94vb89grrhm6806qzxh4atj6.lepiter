@@ -116,6 +116,43 @@
 								"__type" : "textStyle"
 							},
 							"string" : "Start with the package.\nMine return: pragmas, if they are missing.\nCollect examples with return values *in this package*."
+						},
+						{
+							"__type" : "textSnippet",
+							"children" : {
+								"__type" : "snippets",
+								"items" : [ ]
+							},
+							"createEmail" : {
+								"__type" : "email",
+								"emailString" : "<unknown>"
+							},
+							"createTime" : {
+								"__type" : "time",
+								"time" : {
+									"__type" : "dateAndTime",
+									"dateAndTimeString" : "2025-11-17T14:12:54.95737+01:00"
+								}
+							},
+							"editEmail" : {
+								"__type" : "email",
+								"emailString" : "<unknown>"
+							},
+							"editTime" : {
+								"__type" : "time",
+								"time" : {
+									"__type" : "dateAndTime",
+									"dateAndTimeString" : "2025-11-17T14:17:15.617864+01:00"
+								}
+							},
+							"uid" : {
+								"__type" : "uid",
+								"uidString" : "RYFg1SsADgCKuvcOApqmtQ=="
+							},
+							"paragraphStyle" : {
+								"__type" : "textStyle"
+							},
+							"string" : "How to generate a class hierarchy?\nCollect all classes already in the diagram (if any). (We have these already.)\nAll classes with examples as witnesses. (We want these for sure)\nAll classes in packages in the diagram, or in packages of classes in the diagram."
 						}
 					]
 				},
