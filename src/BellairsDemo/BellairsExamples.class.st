@@ -8,19 +8,21 @@ BellairsExamples new bellairsRegistry
 
 "
 Class {
-	#name : #BellairsExamples,
-	#superclass : #Object,
-	#category : #'BellairsDemo-Examples'
+	#name : 'BellairsExamples',
+	#superclass : 'Object',
+	#category : 'BellairsDemo-Examples',
+	#package : 'BellairsDemo',
+	#tag : 'Examples'
 }
 
-{ #category : #examples }
+{ #category : 'examples' }
 BellairsExamples >> bellairsJsonFromStoredJsonFile [
 	<gtExample>
 	<return: #Array>
 	^ BellairsParserExamples new bellairsJsonFromStoredJsonFile
 ]
 
-{ #category : #examples }
+{ #category : 'examples' }
 BellairsExamples >> bellairsRegistry [
 	<gtExample>
 	<return: #BellairsWorkshopsRegistry>
@@ -31,7 +33,7 @@ BellairsExamples >> bellairsRegistry [
 	^ registry
 ]
 
-{ #category : #examples }
+{ #category : 'examples' }
 BellairsExamples >> firstAffiliation [
 	<gtExample>
 	<return: #BellairsAffiliation>
@@ -44,7 +46,7 @@ BellairsExamples >> firstAffiliation [
 	^ affiliation
 ]
 
-{ #category : #examples }
+{ #category : 'examples' }
 BellairsExamples >> firstCountry [
 	<gtExample>
 	<return: #BellairsCountry>
@@ -60,7 +62,7 @@ BellairsExamples >> firstCountry [
 	^ country
 ]
 
-{ #category : #examples }
+{ #category : 'examples' }
 BellairsExamples >> firstPerson [
 	<gtExample>
 	<return: #BellairsPerson>
@@ -73,7 +75,7 @@ BellairsExamples >> firstPerson [
 	^ person
 ]
 
-{ #category : #examples }
+{ #category : 'examples' }
 BellairsExamples >> firstWorkshop [
 	<gtExample>
 	<return: #BellairsWorkshop>

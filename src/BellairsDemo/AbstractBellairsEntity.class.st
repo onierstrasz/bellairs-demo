@@ -9,42 +9,44 @@ Subclasses may also override their `displayName`, `printOn:`, `summary` view ent
 
 "
 Class {
-	#name : #AbstractBellairsEntity,
-	#superclass : #Object,
+	#name : 'AbstractBellairsEntity',
+	#superclass : 'Object',
 	#instVars : [
 		'registry',
 		'name'
 	],
-	#category : #'BellairsDemo-Model'
+	#category : 'BellairsDemo-Model',
+	#package : 'BellairsDemo',
+	#tag : 'Model'
 }
 
-{ #category : #testing }
+{ #category : 'testing' }
 AbstractBellairsEntity class >> isAbstract [
 	^ self == AbstractBellairsEntity
 ]
 
-{ #category : #accessing }
+{ #category : 'accessing' }
 AbstractBellairsEntity >> affiliations [
 	^ self participations affiliations
 ]
 
-{ #category : #accessing }
+{ #category : 'accessing' }
 AbstractBellairsEntity >> arrayOrUniqueElement: anArray [
 	^ anArray size = 1 ifTrue: [ anArray first ] ifFalse: [ anArray ]
 ]
 
-{ #category : #converting }
+{ #category : 'converting' }
 AbstractBellairsEntity >> asCSV [
 	^ self participations first csvHeader , String cr
 		, (String cr join: (self participations collect: #csvLine))
 ]
 
-{ #category : #querying }
+{ #category : 'querying' }
 AbstractBellairsEntity >> countries [
 	^ self participations countries
 ]
 
-{ #category : #converting }
+{ #category : 'converting' }
 AbstractBellairsEntity >> csvFile [
 	| tempFile |
 	tempFile := FileLocator downloads / 'temp.csv'.
@@ -62,14 +64,14 @@ AbstractBellairsEntity >> csvFile [
 	^ tempFile
 ]
 
-{ #category : #accessing }
+{ #category : 'accessing' }
 AbstractBellairsEntity >> entries [
 	"Return an array of raw dictionaries"
 
 	self subclassResponsibility
 ]
 
-{ #category : #actions }
+{ #category : 'actions' }
 AbstractBellairsEntity >> gtActionCSVFor: anAction [
 	<gtAction>
 	^ anAction button
@@ -80,7 +82,7 @@ AbstractBellairsEntity >> gtActionCSVFor: anAction [
 		action: [ :aButton | aButton phlow spawnObject: self participations csvFile ]
 ]
 
-{ #category : #actions }
+{ #category : 'actions' }
 AbstractBellairsEntity >> gtActionInspectParticipationsFor: anAction [
 	<gtAction>
 	^ anAction button
@@ -93,7 +95,7 @@ AbstractBellairsEntity >> gtActionInspectParticipationsFor: anAction [
 			mouseCursor: BlCopyCursor new
 ]
 
-{ #category : #actions }
+{ #category : 'actions' }
 AbstractBellairsEntity >> gtActionRegistryFor: anAction [
 	<gtAction>
 	^ anAction button
@@ -104,7 +106,7 @@ AbstractBellairsEntity >> gtActionRegistryFor: anAction [
 		action: [ :aButton | aButton phlow spawnObject: self registry ]
 ]
 
-{ #category : #views }
+{ #category : 'views' }
 AbstractBellairsEntity >> gtEntriesFor: aView [
 	"<gtView>"
 	^ aView forward
@@ -115,7 +117,7 @@ AbstractBellairsEntity >> gtEntriesFor: aView [
 		actionUpdateButton
 ]
 
-{ #category : #views }
+{ #category : 'views' }
 AbstractBellairsEntity >> gtParticipationsFor: aView [
 	<gtView>
 	^ aView forward
@@ -126,7 +128,7 @@ AbstractBellairsEntity >> gtParticipationsFor: aView [
 		actionUpdateButton
 ]
 
-{ #category : #views }
+{ #category : 'views' }
 AbstractBellairsEntity >> gtSummaryFor: aView [
 	<gtView>
 	"self summary ifEmpty: [ ^ aView empty ]."
@@ -145,37 +147,37 @@ AbstractBellairsEntity >> gtSummaryFor: aView [
 		actionUpdateButton
 ]
 
-{ #category : #initialization }
+{ #category : 'initialization' }
 AbstractBellairsEntity >> initializeFrom: aDictionary [
 	self subclassResponsibility
 ]
 
-{ #category : #accessing }
+{ #category : 'accessing' }
 AbstractBellairsEntity >> json [
 	^ self registry json
 ]
 
-{ #category : #mondrian }
+{ #category : 'mondrian' }
 AbstractBellairsEntity >> mondrianBorderHighlighting: aNode [
 	^ BlBorder paint: Color black width: 1
 ]
 
-{ #category : #mondrian }
+{ #category : 'mondrian' }
 AbstractBellairsEntity >> mondrianChildren [
 	^ {}
 ]
 
-{ #category : #mondrian }
+{ #category : 'mondrian' }
 AbstractBellairsEntity >> mondrianHighlightBorder [
 	^ BlBorder paint: Color black width: 1
 ]
 
-{ #category : #mondrian }
+{ #category : 'mondrian' }
 AbstractBellairsEntity >> mondrianNodeColor [
 	^ Color paleBlue
 ]
 
-{ #category : #mondrian }
+{ #category : 'mondrian' }
 AbstractBellairsEntity >> mondrianNodeElementHighlighting: aNode [
 	^ BlElement new
 		size: 10 @ 10;
@@ -184,12 +186,12 @@ AbstractBellairsEntity >> mondrianNodeElementHighlighting: aNode [
 		aptitude: (BrGlamorousWithExplicitTooltipAptitude text: self name)
 ]
 
-{ #category : #accessing }
+{ #category : 'accessing' }
 AbstractBellairsEntity >> name [
 	^ name
 ]
 
-{ #category : #factory }
+{ #category : 'factory' }
 AbstractBellairsEntity >> participationGroupFrom: aDictionaryCollection [
 	^ BellairsParticipationGroup new
 		registry: self registry;
@@ -197,46 +199,46 @@ AbstractBellairsEntity >> participationGroupFrom: aDictionaryCollection [
 		yourself
 ]
 
-{ #category : #accessing }
+{ #category : 'accessing' }
 AbstractBellairsEntity >> participations [
 	^ (self participationGroupFrom: self entries)
 		searchString: 'participations for ' , self name;
 		yourself
 ]
 
-{ #category : #accessing }
+{ #category : 'accessing' }
 AbstractBellairsEntity >> persons [
 	^ self participations persons
 ]
 
-{ #category : #printing }
+{ #category : 'printing' }
 AbstractBellairsEntity >> printOn: aStream [
 	aStream nextPutAll: self name
 ]
 
-{ #category : #accessing }
+{ #category : 'accessing' }
 AbstractBellairsEntity >> registry [
 	^ registry
 ]
 
-{ #category : #accessing }
+{ #category : 'accessing' }
 AbstractBellairsEntity >> registry: anObject [
 	registry := anObject
 ]
 
-{ #category : #views }
+{ #category : 'views' }
 AbstractBellairsEntity >> summary [
 	^ {{'Name'.
 			self name.
 			self}}
 ]
 
-{ #category : #querying }
+{ #category : 'querying' }
 AbstractBellairsEntity >> urls [
 	^ self participations urls reject: [ :url | url = '' ]
 ]
 
-{ #category : #querying }
+{ #category : 'querying' }
 AbstractBellairsEntity >> workshops [
 	^ self participations workshops
 ]

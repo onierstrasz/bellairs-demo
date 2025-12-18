@@ -2,22 +2,24 @@
 I represent a country of one of the participants of a Bellairs workshop.
 "
 Class {
-	#name : #BellairsCountry,
-	#superclass : #AbstractBellairsEntity,
-	#category : #'BellairsDemo-Model'
+	#name : 'BellairsCountry',
+	#superclass : 'AbstractBellairsEntity',
+	#category : 'BellairsDemo-Model',
+	#package : 'BellairsDemo',
+	#tag : 'Model'
 }
 
-{ #category : #accessing }
+{ #category : 'accessing' }
 BellairsCountry >> country [
 	^ {self}
 ]
 
-{ #category : #accessing }
+{ #category : 'accessing' }
 BellairsCountry >> entries [
 	^ self json select: [ :d | (d at: 'country') = self name ]
 ]
 
-{ #category : #views }
+{ #category : 'views' }
 BellairsCountry >> gtInstitutionsFor: aView [
 	<gtView>
 	^ aView forward
@@ -27,7 +29,7 @@ BellairsCountry >> gtInstitutionsFor: aView [
 		view: #gtInstitutionsFor:
 ]
 
-{ #category : #views }
+{ #category : 'views' }
 BellairsCountry >> gtPersonsFor: aView [
 	<gtView>
 	^ aView forward
@@ -37,7 +39,7 @@ BellairsCountry >> gtPersonsFor: aView [
 		view: #gtPersonsFor:
 ]
 
-{ #category : #views }
+{ #category : 'views' }
 BellairsCountry >> gtWorkshopsFor: aView [
 	<gtView>
 	^ aView forward
@@ -47,12 +49,12 @@ BellairsCountry >> gtWorkshopsFor: aView [
 		view: #gtWorkshopsFor:
 ]
 
-{ #category : #initialization }
+{ #category : 'initialization' }
 BellairsCountry >> initializeFrom: aDictionary [
 	name := aDictionary at: 'country'
 ]
 
-{ #category : #views }
+{ #category : 'views' }
 BellairsCountry >> summary [
 	^ {{'Name'.
 			self name.

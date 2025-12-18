@@ -12,12 +12,14 @@ There is also a stored version of the JSON in {{gtMethod:name=BellairsParserExam
 
 "
 Class {
-	#name : #BellairsParserExamples,
-	#superclass : #Object,
-	#category : #'BellairsDemo-Examples'
+	#name : 'BellairsParserExamples',
+	#superclass : 'Object',
+	#category : 'BellairsDemo-Examples',
+	#package : 'BellairsDemo',
+	#tag : 'Examples'
 }
 
-{ #category : #examples }
+{ #category : 'examples' }
 BellairsParserExamples >> allLines [
 	"Split the data from the cached test file into lines, since parse the input line-by-line."
 
@@ -28,13 +30,13 @@ BellairsParserExamples >> allLines [
 	^ allLines
 ]
 
-{ #category : #examples }
+{ #category : 'examples' }
 BellairsParserExamples >> bellairsGtJson [
 	<gtExample>
 	^ self bellairsJson asGtJson
 ]
 
-{ #category : #examples }
+{ #category : 'examples' }
 BellairsParserExamples >> bellairsJson [
 	"NB: the assertions will be fragile in case the test data are updated."
 
@@ -50,20 +52,20 @@ BellairsParserExamples >> bellairsJson [
 	^ json
 ]
 
-{ #category : #examples }
+{ #category : 'examples' }
 BellairsParserExamples >> bellairsJsonFromStoredJsonFile [
 	<gtExample>
 	^ STONJSON fromString: self bellairsStoredJsonFile contents
 ]
 
-{ #category : #examples }
+{ #category : 'examples' }
 BellairsParserExamples >> bellairsPrettyJsonString [
 	<gtExample>
 	<noTest>
 	^ STONJSON toStringPretty: self bellairsJson
 ]
 
-{ #category : #examples }
+{ #category : 'examples' }
 BellairsParserExamples >> bellairsRegistry [
 	<gtExample>
 	| registry |
@@ -71,19 +73,19 @@ BellairsParserExamples >> bellairsRegistry [
 	^ registry
 ]
 
-{ #category : #examples }
+{ #category : 'examples' }
 BellairsParserExamples >> bellairsStoredJsonFile [
 	<gtExample>
 	^ self dataFolder / 'bellairsParticipants.json'
 ]
 
-{ #category : #examples }
+{ #category : 'examples' }
 BellairsParserExamples >> dataFolder [
 	<gtExample>
 	^ FileLocator gtResource / 'onierstrasz' / 'bellairs-demo' / 'data'
 ]
 
-{ #category : #examples }
+{ #category : 'examples' }
 BellairsParserExamples >> linesTranslated [
 	"Combine all the translations."
 
@@ -92,7 +94,7 @@ BellairsParserExamples >> linesTranslated [
 		collect: [ :line | BellairsRewriteMaps new translateLine: line ]
 ]
 
-{ #category : #examples }
+{ #category : 'examples' }
 BellairsParserExamples >> linesWithAccents [
 	<gtExample>
 	| allLines accentLines |
@@ -102,7 +104,7 @@ BellairsParserExamples >> linesWithAccents [
 	^ accentLines
 ]
 
-{ #category : #examples }
+{ #category : 'examples' }
 BellairsParserExamples >> linesWithAccentsTranslated [
 	"NB: we translate all accents except the `&copy;` symbols, which serve
 	as a marker for the workshop titles in the parser."
@@ -126,7 +128,7 @@ BellairsParserExamples >> linesWithAccentsTranslated [
 	^ translatedLines
 ]
 
-{ #category : #examples }
+{ #category : 'examples' }
 BellairsParserExamples >> linesWithCountriesTranslated [
 	"NB: we translate all accents except the `&copy;` symbols, which serve
 	as a marker for the workshop titles in the parser."
@@ -150,7 +152,7 @@ BellairsParserExamples >> linesWithCountriesTranslated [
 	^ translatedLines
 ]
 
-{ #category : #examples }
+{ #category : 'examples' }
 BellairsParserExamples >> participantWebFile2024 [
 	"The year we have the bug identifying participants."
 
@@ -162,7 +164,7 @@ BellairsParserExamples >> participantWebFile2024 [
 	^ participants
 ]
 
-{ #category : #examples }
+{ #category : 'examples' }
 BellairsParserExamples >> participantWebFiles [
 	"Only download the source data if we need to update the test file."
 
@@ -178,13 +180,13 @@ BellairsParserExamples >> participantWebFiles [
 	^ participants
 ]
 
-{ #category : #examples }
+{ #category : 'examples' }
 BellairsParserExamples >> participantsCachedFile [
 	<gtExample>
 	^ self dataFolder / 'bellairsParticipants.txt'
 ]
 
-{ #category : #examples }
+{ #category : 'examples' }
 BellairsParserExamples >> writeParticipantsToCachedFile [
 	"Write all of the participant webfiles to a single, cached file.
 	Redo this only if the source files change.
@@ -208,7 +210,7 @@ BellairsParserExamples >> writeParticipantsToCachedFile [
 	^ testFile
 ]
 
-{ #category : #examples }
+{ #category : 'examples' }
 BellairsParserExamples >> writePrettyBellairsStoredJsonFile [
 	"Pretty print the JSON."
 

@@ -4,8 +4,8 @@ I am a registry for Bellairs workshops. I am initialized from a JSON produced wi
 I hold the JSON and use it to create domain entities representing the workshops, their participants, and their institutions.
 "
 Class {
-	#name : #BellairsWorkshopsRegistry,
-	#superclass : #Object,
+	#name : 'BellairsWorkshopsRegistry',
+	#superclass : 'Object',
 	#traits : 'TParticipationGroupViews',
 	#classTraits : 'TParticipationGroupViews classTrait',
 	#instVars : [
@@ -15,41 +15,43 @@ Class {
 		'affiliationDict',
 		'countryDict'
 	],
-	#category : #'BellairsDemo-Model'
+	#category : 'BellairsDemo-Model',
+	#package : 'BellairsDemo',
+	#tag : 'Model'
 }
 
-{ #category : #accessing }
+{ #category : 'accessing' }
 BellairsWorkshopsRegistry >> affiliationDict [
 	^ affiliationDict
 ]
 
-{ #category : #querying }
+{ #category : 'querying' }
 BellairsWorkshopsRegistry >> affiliationNamed: aName [
 	^ self affiliationDict at: aName "detect: [ :inst | inst affiliation = aName ]"
 ]
 
-{ #category : #accessing }
+{ #category : 'accessing' }
 BellairsWorkshopsRegistry >> affiliations [
 	^ affiliationDict values
 ]
 
-{ #category : #requirement }
+{ #category : 'requirement' }
 BellairsWorkshopsRegistry >> countries [
 	"^ (self participations collect: #country) copyWithoutDuplicates sorted"
 	^ self countryDict values
 ]
 
-{ #category : #accessing }
+{ #category : 'accessing' }
 BellairsWorkshopsRegistry >> countryDict [
 	^ countryDict
 ]
 
-{ #category : #querying }
+{ #category : 'querying' }
 BellairsWorkshopsRegistry >> countryNamed: aName [
 	^ self countryDict at: aName "detect: [ :c | c country = aName ]"
 ]
 
-{ #category : #actions }
+{ #category : 'actions' }
 BellairsWorkshopsRegistry >> gtActionInspectParticipationsFor: anAction [
 	<gtAction>
 	^ anAction button
@@ -62,7 +64,7 @@ BellairsWorkshopsRegistry >> gtActionInspectParticipationsFor: anAction [
 			mouseCursor: BlCopyCursor new
 ]
 
-{ #category : #views }
+{ #category : 'views' }
 BellairsWorkshopsRegistry >> gtOragnizersFor: aView [
 	<gtView>
 	^ aView forward
@@ -72,7 +74,7 @@ BellairsWorkshopsRegistry >> gtOragnizersFor: aView [
 		view: #gtOrganizersFor:
 ]
 
-{ #category : #initialization }
+{ #category : 'initialization' }
 BellairsWorkshopsRegistry >> initialize [
 	workshopDict := Dictionary new.
 	personDict := Dictionary new.
@@ -80,7 +82,7 @@ BellairsWorkshopsRegistry >> initialize [
 	countryDict := Dictionary new
 ]
 
-{ #category : #initialization }
+{ #category : 'initialization' }
 BellairsWorkshopsRegistry >> initializeFromJson: aJson [
 	json := aJson.
 
@@ -112,12 +114,12 @@ BellairsWorkshopsRegistry >> initializeFromJson: aJson [
 						yourself ] ]
 ]
 
-{ #category : #accessing }
+{ #category : 'accessing' }
 BellairsWorkshopsRegistry >> json [
 	^ json
 ]
 
-{ #category : #accessing }
+{ #category : 'accessing' }
 BellairsWorkshopsRegistry >> participations [
 	^ BellairsParticipationGroup new
 		registry: self;
@@ -126,32 +128,32 @@ BellairsWorkshopsRegistry >> participations [
 		yourself
 ]
 
-{ #category : #accessing }
+{ #category : 'accessing' }
 BellairsWorkshopsRegistry >> personDict [
 	^ personDict
 ]
 
-{ #category : #querying }
+{ #category : 'querying' }
 BellairsWorkshopsRegistry >> personNamed: aName [
 	^ self personDict at: aName  "detect: [ :person | person name = aName ]"
 ]
 
-{ #category : #accessing }
+{ #category : 'accessing' }
 BellairsWorkshopsRegistry >> persons [
 	^ self personDict values
 ]
 
-{ #category : #accessing }
+{ #category : 'accessing' }
 BellairsWorkshopsRegistry >> workshopDict [
 	^ workshopDict
 ]
 
-{ #category : #querying }
+{ #category : 'querying' }
 BellairsWorkshopsRegistry >> workshopNamed: aName [
 	^ self workshopDict at: aName  "detect: [ :workshop | workshop workshop = aName ]"
 ]
 
-{ #category : #accessing }
+{ #category : 'accessing' }
 BellairsWorkshopsRegistry >> workshops [
 	^ workshopDict values
 ]

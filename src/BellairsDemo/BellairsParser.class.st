@@ -6,8 +6,8 @@ I extract this information from each web page, and generate a JSON of dictionari
 The result is used by the {{gtClass:name=BellairsWorkshopsRegistry}} to create domain entities from the JSON.
 "
 Class {
-	#name : #BellairsParser,
-	#superclass : #PP2CompositeNode,
+	#name : 'BellairsParser',
+	#superclass : 'PP2CompositeNode',
 	#instVars : [
 		'workshopTitle',
 		'organizerRole',
@@ -19,10 +19,12 @@ Class {
 		'role',
 		'workshop'
 	],
-	#category : #'BellairsDemo-Model'
+	#category : 'BellairsDemo-Model',
+	#package : 'BellairsDemo',
+	#tag : 'Model'
 }
 
-{ #category : #grammar }
+{ #category : 'grammar' }
 BellairsParser >> bellairsLine [
 	"A line of input should match one of these rules."
 
@@ -30,12 +32,12 @@ BellairsParser >> bellairsLine [
 		/ ignore) end
 ]
 
-{ #category : #grammar }
+{ #category : 'grammar' }
 BellairsParser >> ignore [
 	^ #any asPParser star ==> [ :nodes | nil ]
 ]
 
-{ #category : #grammar }
+{ #category : 'grammar' }
 BellairsParser >> organizerRole [
 	^ '<h1>Organizers</h1>' asPParser trim
 		==> [ :nodes | 
@@ -43,7 +45,7 @@ BellairsParser >> organizerRole [
 			nil ]
 ]
 
-{ #category : #grammar }
+{ #category : 'grammar' }
 BellairsParser >> participantRole [
 	^ '<h1>Confirmed Participants</h1>' asPParser trim
 		/ '<h1>Participants</h1>' asPParser trim
@@ -52,7 +54,7 @@ BellairsParser >> participantRole [
 			nil ]
 ]
 
-{ #category : #grammar }
+{ #category : 'grammar' }
 BellairsParser >> participation [
 	^ ('<!--' asPParser trim optional
 		, '<li><a target="_committee" href="' asPParser trim
@@ -72,7 +74,7 @@ BellairsParser >> participation [
 				'country' -> nodes ninth} asDictionary ]
 ]
 
-{ #category : #grammar }
+{ #category : 'grammar' }
 BellairsParser >> participationSimple [
 	^ ('<li><a' asPParser not trim , '<li>' asPParser trim
 		, $, asPParser negate plus flatten , $, asPParser trim
@@ -86,22 +88,22 @@ BellairsParser >> participationSimple [
 				'country' -> nodes seventh} asDictionary ]
 ]
 
-{ #category : #accessing }
+{ #category : 'accessing' }
 BellairsParser >> role [
 	^ role ifNil: [ 'Unknown' ]
 ]
 
-{ #category : #accessing }
+{ #category : 'accessing' }
 BellairsParser >> start [
 	^ bellairsLine
 ]
 
-{ #category : #accessing }
+{ #category : 'accessing' }
 BellairsParser >> workshop [
 	^ workshop ifNil: [ 'Unknown' ]
 ]
 
-{ #category : #grammar }
+{ #category : 'grammar' }
 BellairsParser >> workshopTitle [
 	^ ('<!-- all content &copy; ' asPParser
 		, (' -->' asPParser not , #any asPParser) star flatten , ' -->' asPParser)

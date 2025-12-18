@@ -3,29 +3,31 @@ I am a Bellairs workshop held in a given year.
 
 "
 Class {
-	#name : #BellairsWorkshop,
-	#superclass : #AbstractBellairsEntity,
+	#name : 'BellairsWorkshop',
+	#superclass : 'AbstractBellairsEntity',
 	#traits : 'TParticipationGroupViews',
 	#classTraits : 'TParticipationGroupViews classTrait',
-	#category : #'BellairsDemo-Model'
+	#category : 'BellairsDemo-Model',
+	#package : 'BellairsDemo',
+	#tag : 'Model'
 }
 
-{ #category : #accessing }
+{ #category : 'accessing' }
 BellairsWorkshop >> affiliations [
 	^ super affiliations
 ]
 
-{ #category : #querying }
+{ #category : 'querying' }
 BellairsWorkshop >> countries [
 	^ super countries
 ]
 
-{ #category : #querying }
+{ #category : 'querying' }
 BellairsWorkshop >> entries [
 	^ self json select: [ :d | (d at: 'workshop') = self name ]
 ]
 
-{ #category : #'as yet unclassified' }
+{ #category : 'as yet unclassified' }
 BellairsWorkshop >> gtActionWebBrowseFor: anAction [
 	<gtAction>
 	^ anAction explicit
@@ -37,7 +39,7 @@ BellairsWorkshop >> gtActionWebBrowseFor: anAction [
 				label: 'Open in Web Browser' translated ]
 ]
 
-{ #category : #views }
+{ #category : 'views' }
 BellairsWorkshop >> gtInstitutionsFor: aView [
 	<gtView>
 	^ aView forward
@@ -47,7 +49,7 @@ BellairsWorkshop >> gtInstitutionsFor: aView [
 		view: #gtInstitutionsFor:
 ]
 
-{ #category : #views }
+{ #category : 'views' }
 BellairsWorkshop >> gtPersonsFor: aView [
 	<gtView>
 	^ aView forward
@@ -57,7 +59,7 @@ BellairsWorkshop >> gtPersonsFor: aView [
 		view: #gtPersonsFor:
 ]
 
-{ #category : #views }
+{ #category : 'views' }
 BellairsWorkshop >> gtWebpageViewFor: aView [
 	<gtView>
 	^ aView forward
@@ -66,29 +68,29 @@ BellairsWorkshop >> gtWebpageViewFor: aView [
 		view: #gtWebpageFor:
 ]
 
-{ #category : #initialization }
+{ #category : 'initialization' }
 BellairsWorkshop >> initializeFrom: aDictionary [
 	name := aDictionary at: 'workshop'
 ]
 
-{ #category : #mondrian }
+{ #category : 'mondrian' }
 BellairsWorkshop >> mondrianBorderHighlighting: aNode [
 	^ self = aNode
 		ifTrue: [ BlBorder paint: Color blue width: 3 ]
 		ifFalse: [ BlBorder paint: Color black width: 1 ]
 ]
 
-{ #category : #mondrian }
+{ #category : 'mondrian' }
 BellairsWorkshop >> mondrianChildren [
 	^ self persons
 ]
 
-{ #category : #mondrian }
+{ #category : 'mondrian' }
 BellairsWorkshop >> mondrianNodeColor [
 	^ Color paleRed
 ]
 
-{ #category : #'as yet unclassified' }
+{ #category : 'as yet unclassified' }
 BellairsWorkshop >> mondrianNodeElementHighlighting: aNode [
 	^ BlTextElement new
 		text: self year asRopedText;
@@ -98,17 +100,17 @@ BellairsWorkshop >> mondrianNodeElementHighlighting: aNode [
 		aptitude: (BrGlamorousWithExplicitTooltipAptitude text: self name)
 ]
 
-{ #category : #querying }
+{ #category : 'querying' }
 BellairsWorkshop >> organizers [
 	^ self participations organizers
 ]
 
-{ #category : #requirement }
+{ #category : 'requirement' }
 BellairsWorkshop >> participations [
 	^ super participations
 ]
 
-{ #category : #views }
+{ #category : 'views' }
 BellairsWorkshop >> summary [
 	^ {{'Name'.
 			self name.
@@ -124,19 +126,19 @@ BellairsWorkshop >> summary [
 			self arrayOrUniqueElement: self countries}}
 ]
 
-{ #category : #accessing }
+{ #category : 'accessing' }
 BellairsWorkshop >> webUrl [
 	^ ZnUrl
 		fromString: 'https://bellairs20' , (self year sliceFrom: 3)
 				, '.ece.mcgill.ca/participants.htm'
 ]
 
-{ #category : #accessing }
+{ #category : 'accessing' }
 BellairsWorkshop >> workshop [
 	^ {self}
 ]
 
-{ #category : #accessing }
+{ #category : 'accessing' }
 BellairsWorkshop >> workshops [
 	"For the graph, we want to see not only this workshop,
 	but also all the other workshops the participants have been to."
@@ -144,7 +146,7 @@ BellairsWorkshop >> workshops [
 	^ (self persons flatCollect: #workshops) copyWithoutDuplicates
 ]
 
-{ #category : #accessing }
+{ #category : 'accessing' }
 BellairsWorkshop >> year [
 	| firstWord |
 	firstWord := self name substrings first.

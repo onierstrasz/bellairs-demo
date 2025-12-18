@@ -4,14 +4,16 @@ I represent a person who has participated in one or more Bellairs workshops as e
 *NB:* my name might contain some HTML accents.
 "
 Class {
-	#name : #BellairsPerson,
-	#superclass : #AbstractBellairsEntity,
+	#name : 'BellairsPerson',
+	#superclass : 'AbstractBellairsEntity',
 	#traits : 'TParticipationGroupViews',
 	#classTraits : 'TParticipationGroupViews classTrait',
-	#category : #'BellairsDemo-Model'
+	#category : 'BellairsDemo-Model',
+	#package : 'BellairsDemo',
+	#tag : 'Model'
 }
 
-{ #category : #accessing }
+{ #category : 'accessing' }
 BellairsPerson >> affiliation [
 	^ self affiliations size = 1
 		ifTrue: [ self affiliations first name ]
@@ -19,17 +21,17 @@ BellairsPerson >> affiliation [
 				, (self affiliations size - 1) printString ]
 ]
 
-{ #category : #accessing }
+{ #category : 'accessing' }
 BellairsPerson >> allRoles [
 	^ self rolesIn: self registry participations
 ]
 
-{ #category : #querying }
+{ #category : 'querying' }
 BellairsPerson >> entries [
 	^ self json select: [ :d | (d at: 'person') = self name ]
 ]
 
-{ #category : #views }
+{ #category : 'views' }
 BellairsPerson >> gtInstitutionsFor: aView [
 	<gtView>
 	^ aView forward
@@ -39,7 +41,7 @@ BellairsPerson >> gtInstitutionsFor: aView [
 		view: #gtInstitutionsFor:
 ]
 
-{ #category : #'as yet unclassified' }
+{ #category : 'as yet unclassified' }
 BellairsPerson >> gtOpenWebBrowserActionFor: anAction [
 	<todo: 'Create a menu of URLs if there are more than one.'>
 	<gtAction>
@@ -51,7 +53,7 @@ BellairsPerson >> gtOpenWebBrowserActionFor: anAction [
 		action: [ :aButton :aTab | WebBrowser openOn: self webUrl ]
 ]
 
-{ #category : #views }
+{ #category : 'views' }
 BellairsPerson >> gtWebpageViewFor: aView [
 	<gtView>
 	self urls ifEmpty: [ ^ aView empty ].
@@ -61,7 +63,7 @@ BellairsPerson >> gtWebpageViewFor: aView [
 		view: #gtWebpageFor:
 ]
 
-{ #category : #views }
+{ #category : 'views' }
 BellairsPerson >> gtWorkshopsFor: aView [
 	<gtView>
 	^ aView forward
@@ -71,27 +73,27 @@ BellairsPerson >> gtWorkshopsFor: aView [
 		view: #gtWorkshopsFor:
 ]
 
-{ #category : #initialization }
+{ #category : 'initialization' }
 BellairsPerson >> initializeFrom: aDictionary [
 	name := aDictionary at: 'person'
 ]
 
-{ #category : #accessing }
+{ #category : 'accessing' }
 BellairsPerson >> initials [
 	^ '' join: (self name substrings collect: #first)
 ]
 
-{ #category : #querying }
+{ #category : 'querying' }
 BellairsPerson >> isOrganizer [
 	^ (self entries collect: [ :d | d at: 'role' ]) includes: 'Organizer'
 ]
 
-{ #category : #querying }
+{ #category : 'querying' }
 BellairsPerson >> isParticipant [
 	^ (self entries collect: [ :d | d at: 'role' ]) includes: 'Participant'
 ]
 
-{ #category : #mondrian }
+{ #category : 'mondrian' }
 BellairsPerson >> mondrianBorderHighlighting: aNode [
 	^ self = aNode
 		ifTrue: [ BlBorder paint: Color blue width: 3 ]
@@ -100,14 +102,14 @@ BellairsPerson >> mondrianBorderHighlighting: aNode [
 				ifFalse: [ BlBorder paint: Color black width: 1 ] ]
 ]
 
-{ #category : #mondrian }
+{ #category : 'mondrian' }
 BellairsPerson >> mondrianNodeColor [
 	self workshops size = 1 ifTrue: [ ^ Color paleGreen ].
 	self workshops size < 4 ifTrue: [ ^ Color lightGreen slightlyDarker ].
 	^ Color lightGreen twiceDarker
 ]
 
-{ #category : #mondrian }
+{ #category : 'mondrian' }
 BellairsPerson >> mondrianNodeElementHighlighting: aNode [
 	^ BlTextElement new
 		text: self initials asRopedText;
@@ -119,26 +121,26 @@ BellairsPerson >> mondrianNodeElementHighlighting: aNode [
 		yourself
 ]
 
-{ #category : #accessing }
+{ #category : 'accessing' }
 BellairsPerson >> persons [
 	"For the graph we want to see all the other persons who attended the same workshops."
 
 	^ (self workshops flatCollect: #persons) copyWithoutDuplicates
 ]
 
-{ #category : #accessing }
+{ #category : 'accessing' }
 BellairsPerson >> roles [
 	^ self rolesIn: self participations
 ]
 
-{ #category : #accessing }
+{ #category : 'accessing' }
 BellairsPerson >> rolesIn: aParticiationGroup [
 	^ ', '
 		join: ((aParticiationGroup participationsWithPersonNamed: self name) collect: #role)
 				copyWithoutDuplicates
 ]
 
-{ #category : #accessing }
+{ #category : 'accessing' }
 BellairsPerson >> summary [
 	^ {{'Name'.
 			self name.
@@ -157,12 +159,12 @@ BellairsPerson >> summary [
 			self arrayOrUniqueElement: self urls}}
 ]
 
-{ #category : #accessing }
+{ #category : 'accessing' }
 BellairsPerson >> surname [
 	^ self name substrings last
 ]
 
-{ #category : #querying }
+{ #category : 'querying' }
 BellairsPerson >> webUrl [
 	^ self urls first asZnUrl
 ]

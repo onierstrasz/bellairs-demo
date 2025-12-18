@@ -4,30 +4,32 @@ I represent the Institution of a Bellairs workshop participant.
 *NB:* a person might change insituitions over the years.
 "
 Class {
-	#name : #BellairsAffiliation,
-	#superclass : #AbstractBellairsEntity,
+	#name : 'BellairsAffiliation',
+	#superclass : 'AbstractBellairsEntity',
 	#instVars : [
 		'countryName'
 	],
-	#category : #'BellairsDemo-Model'
+	#category : 'BellairsDemo-Model',
+	#package : 'BellairsDemo',
+	#tag : 'Model'
 }
 
-{ #category : #accessing }
+{ #category : 'accessing' }
 BellairsAffiliation >> affiliation [
 	^ self
 ]
 
-{ #category : #accessing }
+{ #category : 'accessing' }
 BellairsAffiliation >> country [
 	^ self registry countryNamed: countryName
 ]
 
-{ #category : #querying }
+{ #category : 'querying' }
 BellairsAffiliation >> entries [
 	^ self json select: [ :d | (d at: 'affiliation') = self name ]
 ]
 
-{ #category : #views }
+{ #category : 'views' }
 BellairsAffiliation >> gtPersonsFor: aView [
 	<gtView>
 	^ aView forward
@@ -37,7 +39,7 @@ BellairsAffiliation >> gtPersonsFor: aView [
 		view: #gtPersonsFor:
 ]
 
-{ #category : #views }
+{ #category : 'views' }
 BellairsAffiliation >> gtWorkshopsFor: aView [
 	<gtView>
 	^ aView forward
@@ -47,13 +49,13 @@ BellairsAffiliation >> gtWorkshopsFor: aView [
 		view: #gtWorkshopsFor:
 ]
 
-{ #category : #initialization }
+{ #category : 'initialization' }
 BellairsAffiliation >> initializeFrom: aDictionary [
 	name := aDictionary at: 'affiliation'.
 	countryName := aDictionary at: 'country'.
 ]
 
-{ #category : #views }
+{ #category : 'views' }
 BellairsAffiliation >> summary [
 	^ {{'Name'.
 			self name.

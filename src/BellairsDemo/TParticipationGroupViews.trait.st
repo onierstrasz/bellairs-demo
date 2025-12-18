@@ -1,19 +1,21 @@
 Trait {
-	#name : #TParticipationGroupViews,
-	#category : #'BellairsDemo-Model'
+	#name : 'TParticipationGroupViews',
+	#category : 'BellairsDemo-Model',
+	#package : 'BellairsDemo',
+	#tag : 'Model'
 }
 
-{ #category : #requirement }
+{ #category : 'requirement' }
 TParticipationGroupViews >> affiliations [
 	^ self explicitRequirement
 ]
 
-{ #category : #requirement }
+{ #category : 'requirement' }
 TParticipationGroupViews >> countries [
 	^ self explicitRequirement
 ]
 
-{ #category : #views }
+{ #category : 'views' }
 TParticipationGroupViews >> gtCountriesFor: aView [
 <gtView>
 	^ aView columnedList
@@ -39,7 +41,7 @@ TParticipationGroupViews >> gtCountriesFor: aView [
 		actionUpdateButton
 ]
 
-{ #category : #views }
+{ #category : 'views' }
 TParticipationGroupViews >> gtGraphFor: aView [
 	<gtView>
 	^ aView mondrian
@@ -49,7 +51,7 @@ TParticipationGroupViews >> gtGraphFor: aView [
 		actionUpdateButton
 ]
 
-{ #category : #views }
+{ #category : 'views' }
 TParticipationGroupViews >> gtInstitutionsFor: aView [
 	<gtView>
 	^ aView columnedList
@@ -75,7 +77,7 @@ TParticipationGroupViews >> gtInstitutionsFor: aView [
 		actionUpdateButton
 ]
 
-{ #category : #views }
+{ #category : 'views' }
 TParticipationGroupViews >> gtParticipationsFor: aView [
 	<gtView>
 	^ aView forward
@@ -85,7 +87,7 @@ TParticipationGroupViews >> gtParticipationsFor: aView [
 		view: #gtParticipationsFor:
 ]
 
-{ #category : #views }
+{ #category : 'views' }
 TParticipationGroupViews >> gtPersonsFor: aView [
 	<gtView>
 	^ aView columnedList
@@ -114,7 +116,7 @@ TParticipationGroupViews >> gtPersonsFor: aView [
 		actionUpdateButton
 ]
 
-{ #category : #searching }
+{ #category : 'searching' }
 TParticipationGroupViews >> gtSpotterForParticipations: aSearch [
 	<gtSearch>
 	^ aSearch list
@@ -131,7 +133,7 @@ TParticipationGroupViews >> gtSpotterForParticipations: aSearch [
 		filterBySubstring
 ]
 
-{ #category : #views }
+{ #category : 'views' }
 TParticipationGroupViews >> gtWorkshopsFor: aView [
 	<gtView>
 	^ aView columnedList
@@ -160,22 +162,22 @@ TParticipationGroupViews >> gtWorkshopsFor: aView [
 		actionUpdateButton
 ]
 
-{ #category : #requirement }
+{ #category : 'requirement' }
 TParticipationGroupViews >> participations [
 	^ self explicitRequirement
 ]
 
-{ #category : #requirement }
+{ #category : 'requirement' }
 TParticipationGroupViews >> persons [
 	^ self explicitRequirement
 ]
 
-{ #category : #accessing }
+{ #category : 'accessing' }
 TParticipationGroupViews >> personsSorted [
 	^ self persons sort: [ :a :b | a surname < b surname ]
 ]
 
-{ #category : #mondrian }
+{ #category : 'mondrian' }
 TParticipationGroupViews >> workshopPersonsGraph: aMondrian [
 	| nodes |
 	nodes := self workshops , self persons.
@@ -190,12 +192,12 @@ TParticipationGroupViews >> workshopPersonsGraph: aMondrian [
 	^ aMondrian
 ]
 
-{ #category : #mondrian }
+{ #category : 'mondrian' }
 TParticipationGroupViews >> workshopPersonsMondrianGraph [
 	^ self workshopPersonsGraph:GtMondrian new
 ]
 
-{ #category : #requirement }
+{ #category : 'requirement' }
 TParticipationGroupViews >> workshops [
 	^ self explicitRequirement
 ]

@@ -3,45 +3,47 @@ I represent a group of Participations, typically as the result of a query.
 
 "
 Class {
-	#name : #BellairsParticipationGroup,
-	#superclass : #AbstractBellairsEntity,
+	#name : 'BellairsParticipationGroup',
+	#superclass : 'AbstractBellairsEntity',
 	#traits : 'TGtGroup + TParticipationGroupViews',
 	#classTraits : 'TGtGroup classTrait + TParticipationGroupViews classTrait',
 	#instVars : [
 		'data',
 		'searchString'
 	],
-	#category : #'BellairsDemo-Model'
+	#category : 'BellairsDemo-Model',
+	#package : 'BellairsDemo',
+	#tag : 'Model'
 }
 
-{ #category : #accessing }
+{ #category : 'accessing' }
 BellairsParticipationGroup >> affiliations [
 	^ (self collect: [ :p | self registry affiliationNamed: p affiliation name ])
 		copyWithoutDuplicates
 ]
 
-{ #category : #requirement }
+{ #category : 'requirement' }
 BellairsParticipationGroup >> countries [
 	^ (self collect: [ :p | self registry countryNamed: p country name ])
 		copyWithoutDuplicates
 ]
 
-{ #category : #accessing }
+{ #category : 'accessing' }
 BellairsParticipationGroup >> data [
 	^ data
 ]
 
-{ #category : #accessing }
+{ #category : 'accessing' }
 BellairsParticipationGroup >> data: aDictionary [
 	data := aDictionary
 ]
 
-{ #category : #'as yet unclassified' }
+{ #category : 'as yet unclassified' }
 BellairsParticipationGroup >> entries [
 	^ data
 ]
 
-{ #category : #views }
+{ #category : 'views' }
 BellairsParticipationGroup >> gtOrganizersFor: aView [
 	<gtView>
 	^ aView forward
@@ -51,7 +53,7 @@ BellairsParticipationGroup >> gtOrganizersFor: aView [
 		view: #gtPersonsFor:
 ]
 
-{ #category : #views }
+{ #category : 'views' }
 BellairsParticipationGroup >> gtParticipationsFor: aView [
 	<gtView>
 	^ aView columnedList
@@ -82,7 +84,7 @@ BellairsParticipationGroup >> gtParticipationsFor: aView [
 		actionUpdateButton
 ]
 
-{ #category : #accessing }
+{ #category : 'accessing' }
 BellairsParticipationGroup >> items [
 	^ self entries
 		collect: [ :dict | 
@@ -92,20 +94,20 @@ BellairsParticipationGroup >> items [
 				yourself ]
 ]
 
-{ #category : #printing }
+{ #category : 'printing' }
 BellairsParticipationGroup >> name [
 	"Display the query?"
 
 	^ self searchString ifNil: [ 'a participation group' ]
 ]
 
-{ #category : #querying }
+{ #category : 'querying' }
 BellairsParticipationGroup >> organizers [
 	^ self
 		participationGroupFrom: ((self select: [ :p | p role = 'Organizer' ]) collect: #data)
 ]
 
-{ #category : #accessing }
+{ #category : 'accessing' }
 BellairsParticipationGroup >> participations [
 	^ self "entries
 		collect: [ :dict | 
@@ -115,29 +117,29 @@ BellairsParticipationGroup >> participations [
 				yourself ]"
 ]
 
-{ #category : #accessing }
+{ #category : 'accessing' }
 BellairsParticipationGroup >> participationsWithPersonNamed: aName [
 	^ (self participationGroupFrom: (data select: [ :d | (d at: 'person') = aName ]))
 		searchString: 'participations for ', aName
 ]
 
-{ #category : #accessing }
+{ #category : 'accessing' }
 BellairsParticipationGroup >> persons [
 	^ (self collect: [ :p | self registry personNamed: p person name ])
 		copyWithoutDuplicates
 ]
 
-{ #category : #accessing }
+{ #category : 'accessing' }
 BellairsParticipationGroup >> searchString [
 	^ searchString
 ]
 
-{ #category : #accessing }
+{ #category : 'accessing' }
 BellairsParticipationGroup >> searchString: aString [
 	searchString := aString
 ]
 
-{ #category : #views }
+{ #category : 'views' }
 BellairsParticipationGroup >> summary [
 	^ {{'Name'.
 			self name.
@@ -159,12 +161,12 @@ BellairsParticipationGroup >> summary [
 			self arrayOrUniqueElement: self participations}}
 ]
 
-{ #category : #accessing }
+{ #category : 'accessing' }
 BellairsParticipationGroup >> urls [
 	^ (self collect: #url) copyWithoutDuplicates
 ]
 
-{ #category : #accessing }
+{ #category : 'accessing' }
 BellairsParticipationGroup >> workshops [
 	^ (self collect: [ :p | self registry workshopNamed: p workshop name ])
 		copyWithoutDuplicates

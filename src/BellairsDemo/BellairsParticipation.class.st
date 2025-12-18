@@ -4,42 +4,44 @@ As such I represent a virtual rather than a physical entity.
 I map directly to the individual lines of the web pages, and to the dictionary entries of the JSON produced from the website..
 "
 Class {
-	#name : #BellairsParticipation,
-	#superclass : #AbstractBellairsEntity,
+	#name : 'BellairsParticipation',
+	#superclass : 'AbstractBellairsEntity',
 	#instVars : [
 		'data'
 	],
-	#category : #'BellairsDemo-Model'
+	#category : 'BellairsDemo-Model',
+	#package : 'BellairsDemo',
+	#tag : 'Model'
 }
 
-{ #category : #accessing }
+{ #category : 'accessing' }
 BellairsParticipation >> affiliation [
 	^ self registry affiliationNamed:  (data at: 'affiliation')
 ]
 
-{ #category : #converting }
+{ #category : 'converting' }
 BellairsParticipation >> asCSV [
 	^ self csvHeader , String cr , self csvLine
 ]
 
-{ #category : #converting }
+{ #category : 'converting' }
 BellairsParticipation >> asCsvLine: aStringArray [
 	^ ',' join: (aStringArray collect: [ :field | field surroundedBy: '"' ])
 ]
 
-{ #category : #converting }
+{ #category : 'converting' }
 BellairsParticipation >> asString [
 	"String for spotter searchers"
 
 	^ '; ' join: self data values
 ]
 
-{ #category : #accessing }
+{ #category : 'accessing' }
 BellairsParticipation >> country [
 	^ self registry countryNamed: (data at: 'country')
 ]
 
-{ #category : #converting }
+{ #category : 'converting' }
 BellairsParticipation >> csvFields [
 	^ {'workshop'.
 		'role'.
@@ -49,48 +51,48 @@ BellairsParticipation >> csvFields [
 		'url'}
 ]
 
-{ #category : #converting }
+{ #category : 'converting' }
 BellairsParticipation >> csvHeader [
 	^ self asCsvLine: self csvFields
 ]
 
-{ #category : #converting }
+{ #category : 'converting' }
 BellairsParticipation >> csvLine [
 	^ self
 		asCsvLine: (self csvFields collect: [ :field | self data at: field ifAbsent: [ '' ] ])
 ]
 
-{ #category : #accessing }
+{ #category : 'accessing' }
 BellairsParticipation >> data [
 	^ data
 ]
 
-{ #category : #accessing }
+{ #category : 'accessing' }
 BellairsParticipation >> data: aDictionary [
 	data := aDictionary
 ]
 
-{ #category : #accessing }
+{ #category : 'accessing' }
 BellairsParticipation >> entries [
 	^ {data}
 ]
 
-{ #category : #accessing }
+{ #category : 'accessing' }
 BellairsParticipation >> name [
 	^ (data at: 'person') , ' -- ' , (data at: 'workshop')
 ]
 
-{ #category : #accessing }
+{ #category : 'accessing' }
 BellairsParticipation >> person [
 	^ self registry personNamed: (data at: 'person')
 ]
 
-{ #category : #accessing }
+{ #category : 'accessing' }
 BellairsParticipation >> role [
 	^ data at: 'role'
 ]
 
-{ #category : #accessing }
+{ #category : 'accessing' }
 BellairsParticipation >> summary [
 	^ {{'name'.
 			self name.
@@ -107,7 +109,7 @@ BellairsParticipation >> summary [
 			self url}}
 ]
 
-{ #category : #accessing }
+{ #category : 'accessing' }
 BellairsParticipation >> url [
 	^ data
 		at: 'url'
@@ -115,7 +117,7 @@ BellairsParticipation >> url [
 		ifAbsent: [ '' ]
 ]
 
-{ #category : #accessing }
+{ #category : 'accessing' }
 BellairsParticipation >> workshop [
 	^ self registry workshopNamed: (data at: 'workshop')
 ]

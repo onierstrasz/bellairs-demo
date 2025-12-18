@@ -4,16 +4,18 @@ I translate some HTML accents to their UTF-8 equivalents.
 Caveat: I only translate accents actually found in the Bellairs pages.
 "
 Class {
-	#name : #BellairsRewriteMaps,
-	#superclass : #Object,
+	#name : 'BellairsRewriteMaps',
+	#superclass : 'Object',
 	#instVars : [
 		'htmlAccents',
 		'patchCountries'
 	],
-	#category : #'BellairsDemo-Model'
+	#category : 'BellairsDemo-Model',
+	#package : 'BellairsDemo',
+	#tag : 'Model'
 }
 
-{ #category : #converting }
+{ #category : 'converting' }
 BellairsRewriteMaps >> htmlAccents [
 	"NB: We only translate the accents that actually appear in our input."
 
@@ -34,7 +36,7 @@ BellairsRewriteMaps >> htmlAccents [
 					'&auml;' -> 'ä'} asDictionary ]
 ]
 
-{ #category : #converting }
+{ #category : 'converting' }
 BellairsRewriteMaps >> patchCountries [
 	"NB: We only translate the accents that actually appear in our input."
 
@@ -53,7 +55,7 @@ BellairsRewriteMaps >> patchCountries [
 					asDictionary ]
 ]
 
-{ #category : #converting }
+{ #category : 'converting' }
 BellairsRewriteMaps >> translateLine: aLine [
 	"NB: fix accents last so rewrite rules apply to the version with HTML accents."
 
@@ -64,7 +66,7 @@ BellairsRewriteMaps >> translateLine: aLine [
 	^ theLine
 ]
 
-{ #category : #converting }
+{ #category : 'converting' }
 BellairsRewriteMaps >> translateLine: aLine using: aDictionary [
 	| updatedLine |
 	updatedLine := aLine.
