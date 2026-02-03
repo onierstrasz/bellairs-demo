@@ -35,7 +35,7 @@ BellairsWorkshop >> gtActionWebBrowseFor: anAction [
 		stencil: [ BrButton new
 				aptitude: BrGlamorousButtonWithIconAptitude;
 				action: [ WebBrowser openOn: self webUrl ];
-				icon: BrGlamorousVectorIcons link;
+				icon: BrGlamorousVectorIcons web;
 				label: 'Open in Web Browser' translated ]
 ]
 

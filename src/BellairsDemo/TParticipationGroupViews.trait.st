@@ -1,3 +1,6 @@
+"
+NB: When we declare affiliations, participations, workshops etc. as `^ self explicitRequirement`, the Coder thinks these methods are abstract in users that inherit these methods from a superclass.
+"
 Trait {
 	#name : 'TParticipationGroupViews',
 	#category : 'BellairsDemo-Model',

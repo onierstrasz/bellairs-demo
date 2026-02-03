@@ -49,7 +49,7 @@ BellairsPerson >> gtOpenWebBrowserActionFor: anAction [
 	^ anAction button
 		priority: 86;
 		tooltip: 'Open web page';
-		icon: BrGlamorousVectorIcons link;
+		icon: BrGlamorousVectorIcons web;
 		action: [ :aButton :aTab | WebBrowser openOn: self webUrl ]
 ]
 

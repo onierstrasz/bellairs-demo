@@ -63,6 +63,33 @@ BellairsExamples >> firstCountry [
 ]
 
 { #category : 'examples' }
+BellairsExamples >> firstOrganizer [
+	<gtExample>
+	<return: #BellairsPerson>
+	| person registry |
+	registry := BellairsExamples new bellairsRegistry.
+	person := registry persons detect: #isOrganizer.
+	self assert: person isOrganizer.
+	self assert: person workshops size equals: 7.
+	self assert: person affiliations size equals: 1.
+	self assert: person participations size equals: 7.
+	^ person
+]
+
+{ #category : 'examples' }
+BellairsExamples >> firstParticipation [
+	<gtExample>
+	<return: #BellairsParticipation>
+	| participation registry |
+	registry := BellairsExamples new bellairsRegistry.
+	participation := registry participations first.
+	self assert: participation workshops size equals: 1.
+	self assert: participation persons size equals: 1.
+	self assert: participation participations size equals: 1.
+	^ participation
+]
+
+{ #category : 'examples' }
 BellairsExamples >> firstPerson [
 	<gtExample>
 	<return: #BellairsPerson>

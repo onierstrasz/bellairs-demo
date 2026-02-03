@@ -39,6 +39,40 @@
 				"code" : "BellairsExamples new bellairsRegistry"
 			},
 			{
+				"__type" : "pharoSnippet",
+				"children" : {
+					"__type" : "snippets",
+					"items" : [ ]
+				},
+				"createEmail" : {
+					"__type" : "email",
+					"emailString" : "<unknown>"
+				},
+				"createTime" : {
+					"__type" : "time",
+					"time" : {
+						"__type" : "dateAndTime",
+						"dateAndTimeString" : "2026-02-03T16:12:25.270554+01:00"
+					}
+				},
+				"editEmail" : {
+					"__type" : "email",
+					"emailString" : "<unknown>"
+				},
+				"editTime" : {
+					"__type" : "time",
+					"time" : {
+						"__type" : "dateAndTime",
+						"dateAndTimeString" : "2026-02-03T16:12:25.677933+01:00"
+					}
+				},
+				"uid" : {
+					"__type" : "uid",
+					"uidString" : "WThIU7BNRcuxspfJFd4Grg=="
+				},
+				"code" : "Bellairs2026Slides new"
+			},
+			{
 				"__type" : "textSnippet",
 				"children" : {
 					"__type" : "snippets",
@@ -57,7 +91,7 @@
 								"__type" : "time",
 								"time" : {
 									"__type" : "dateAndTime",
-									"dateAndTimeString" : "2025-10-22T14:37:57.281962+02:00"
+									"dateAndTimeString" : "2026-02-03T16:46:58.379946+01:00"
 								}
 							},
 							"editEmail" : {
@@ -68,12 +102,12 @@
 								"__type" : "time",
 								"time" : {
 									"__type" : "dateAndTime",
-									"dateAndTimeString" : "2025-10-22T14:37:57.281962+02:00"
+									"dateAndTimeString" : "2026-02-03T16:46:58.379946+01:00"
 								}
 							},
 							"uid" : {
 								"__type" : "uid",
-								"uidString" : "Upy1UiD+DQCW2ZspCe8ZiA=="
+								"uidString" : "i2X9pGZuQwidk8GAls3Gew=="
 							},
 							"paragraphStyle" : {
 								"__type" : "textStyle"
@@ -94,7 +128,7 @@
 								"__type" : "time",
 								"time" : {
 									"__type" : "dateAndTime",
-									"dateAndTimeString" : "2025-10-22T14:20:56.661259+02:00"
+									"dateAndTimeString" : "2025-10-22T14:37:57.281962+02:00"
 								}
 							},
 							"editEmail" : {
@@ -105,17 +139,17 @@
 								"__type" : "time",
 								"time" : {
 									"__type" : "dateAndTime",
-									"dateAndTimeString" : "2025-10-22T14:21:32.981077+02:00"
+									"dateAndTimeString" : "2026-02-03T16:47:11.475597+01:00"
 								}
 							},
 							"uid" : {
 								"__type" : "uid",
-								"uidString" : "KzHgFSD+DQCCKrdtCe8ZiA=="
+								"uidString" : "Upy1UiD+DQCW2ZspCe8ZiA=="
 							},
 							"paragraphStyle" : {
 								"__type" : "textStyle"
 							},
-							"string" : "Turn *Role* into a domain entity?"
+							"string" : "Turn *Role* into a domain entity?\nMake Registry a subclass of ParticipationGroup?\nGenerate a Scenery class diagram (partl"
 						}
 					]
 				},

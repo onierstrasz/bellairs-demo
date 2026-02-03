@@ -155,14 +155,17 @@ Bellairs2026Slides >> slidePriorities [
 Bellairs2026Slides >> title: aSlide [ 
 	<gtSlide>
 <text:
-'A title or header slide'>
+'# Applying Moldable Development to the Bellairs workshops
+
+
+'>
 
 	^ (aSlide titleWithFooter)
 		setPriority;
 		titleBottomPadding: 30;
-		titleWithFormat: (self asTitle: 'Using Moldable Development');
-		subtitleWithFormat: (self asBigText: 'to explore Bellairs workshops');
-		footerWithFormat: (self asBigText: 'oscar.nierstrasz@feenk.com')
+		titleWithFormat: (self asTitle: 'Applying Moldable Development');
+		subtitleWithFormat: (self asBigText: 'to the Bellairs workshops');
+		footerWithFormat: (self asBigCode: 'oscar.nierstrasz@feenk.com')
 ]
 
 { #category : 'scenery' }
@@ -173,18 +176,122 @@ Bellairs2026Slides >> umlScenery [
 	<noTest>
 	<storedScenery>
 	<return: #GtScenery>
-	| scenery item1 item2 |
+	| scenery item1 item2 item3 item4 item5 item6 item7 item8 item9 item10 item11 item12 |
 	scenery := GtScenery new.
 	item1 := scenery
 			addSceneryItem: (GtSceneryPackageInspectorStencil new packageName: #BellairsDemo) asItem.
-	item1 position: -666.0 @ -220.0.
+	item1 position: -114.16666666666663 @ 123.23549397786462.
 	item1 extent: 300.0 @ 400.0.
 	item2 := scenery
-			addSceneryItem: (GtSceneryTextLabelStencil new
-					label: 'We can generate the classes from the examples. To do: don''t generate classes already in the scenery; generate the inheritances, with missing parent classes.';
-					width: 244.51644388834632) asItem.
-	item2 position: -107.13251749674498 @ -306.9514516194662.
-	item2 extent: 244.51644388834632 @ 82.0.
+			addSceneryItem: (GtSceneryUMLClassStencil new
+					label: 'BellairsParticipation';
+					width: 213.280029296875;
+					exampleMethodName: 'BellairsExamples>>#firstParticipation') asItem.
+	item2 position: 292.85738118489587 @ 602.2354939778646.
+	item2 extent: 213.280029296875 @ 40.0.
+	item3 := scenery
+			addSceneryItem: (GtSceneryUMLClassStencil new
+					label: #BellairsPerson;
+					exampleMethodName: 'BellairsExamples>>#firstOrganizer') asItem.
+	item3 position: 630.8573811848959 @ 420.2354939778646.
+	item3 extent: 153.88002014160156 @ 40.0.
+	item4 := scenery
+			addSceneryItem: (GtSceneryUMLClassStencil new
+					label: #BellairsWorkshop;
+					width: 186.0640106201172;
+					exampleMethodName: 'BellairsExamples>>#firstWorkshop') asItem.
+	item4 position: 657.8573811848959 @ 715.2354939778646.
+	item4 extent: 186.0640106201172 @ 40.0.
+	item5 := scenery
+			addSceneryItem: (GtSceneryExampleStencil new
+					exampleMethodName: 'BellairsExamples>>#firstWorkshop') asItem.
+	item5 position: 1210.857381184896 @ 783.2354939778647.
+	item5 extent: 342.14325291206774 @ 238.09595399796058.
+	item6 := scenery
+			addSceneryItem: (GtSceneryExampleStencil new
+					exampleMethodName: 'BellairsExamples>>#firstOrganizer') asItem.
+	item6 position: 978.857381184896 @ 144.23549397786462.
+	item6 extent: 406.7752673191519 @ 260.7265797998862.
+	item7 := scenery
+			addSceneryItem: (GtSceneryUMLClassStencil new
+					label: #BellairsCountry;
+					width: 165.68801879882813;
+					exampleMethodName: 'BellairsExamples>>#firstCountry') asItem.
+	item7 position: 501.85738118489587 @ 902.2354939778647.
+	item7 extent: 165.68801879882813 @ 40.0.
+	item8 := scenery
+			addSceneryItem: (GtSceneryUMLClassStencil new
+					label: #BellairsWorkshopsRegistry;
+					width: 277.0240478515625;
+					exampleMethodName: 'BellairsExamples>>#bellairsRegistry') asItem.
+	item8 position: -175.16666666666663 @ 576.2354939778646.
+	item8 extent: 277.0240478515625 @ 40.0.
+	item9 := scenery
+			addSceneryItem: (GtSceneryExampleStencil new
+					exampleMethodName: 'BellairsExamples>>#bellairsRegistry') asItem.
+	item9 position: -114.14261881510413 @ 731.2354939778646.
+	item9 extent: 525.0111577208982 @ 332.938489433354.
+	item10 := scenery
+			addSceneryItem: (GtSceneryExampleStencil new
+					exampleMethodName: 'BellairsExamples>>#firstCountry') asItem.
+	item10 position: 831.8573811848958 @ 922.235493977865.
+	item10 extent: 296.22022613185754 @ 265.1839973309518.
+	item11 := scenery
+			addSceneryItem: (GtSceneryUMLClassStencil new
+					label: #BellairsAffiliation;
+					exampleMethodName: 'BellairsExamples>>#firstAffiliation') asItem.
+	item11 position: 949.8333333333335 @ 536.2354939778646.
+	item11 extent: 181.0480194091797 @ 40.0.
+	item12 := scenery
+			addSceneryItem: (GtSceneryExampleStencil new
+					exampleMethodName: 'BellairsExamples>>#firstAffiliation') asItem.
+	item12 position: 1315.8813527425132 @ 493.2354939778646.
+	item12 extent: 429.4880040497369 @ 227.63840629561253.
+	scenery
+		addConnectionWithStencil: (GtSceneryStraightArcStencil new
+				labelText: 'example')
+		from: item4
+		to: item5.
+	scenery
+		addConnectionWithStencil: GtSceneryUMLConnectionStencil new
+		from: item2
+		to: item4.
+	scenery
+		addConnectionWithStencil: (GtSceneryStraightArcStencil new
+				labelText: 'example')
+		from: item3
+		to: item6.
+	scenery
+		addConnectionWithStencil: GtSceneryUMLConnectionStencil new
+		from: item2
+		to: item7.
+	scenery
+		addConnectionWithStencil: GtSceneryUMLConnectionStencil new
+		from: item2
+		to: item3.
+	scenery
+		addConnectionWithStencil: (GtSceneryStraightArcStencil new
+				labelText: 'example')
+		from: item8
+		to: item9.
+	scenery
+		addConnectionWithStencil: (GtSceneryStraightArcStencil new
+				labelText: 'example')
+		from: item7
+		to: item10.
+	scenery
+		addConnectionWithStencil: GtSceneryUMLConnectionStencil new
+		from: item8
+		to: item2.
+	scenery
+		addConnectionWithStencil: GtSceneryUMLConnectionStencil new
+		from: item3
+		to: item11.
+	scenery
+		addConnectionWithStencil: (GtSceneryStraightArcStencil new
+				labelText: 'example')
+		from: item11
+		to: item12.
 	scenery storeStringMethodName: 'Bellairs2026Slides>>#umlScenery'.
 	^ scenery
 ]
