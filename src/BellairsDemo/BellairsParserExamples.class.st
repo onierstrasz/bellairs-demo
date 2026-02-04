@@ -46,7 +46,7 @@ BellairsParserExamples >> bellairsJson [
 	json := self linesTranslated
 			collect: [ :line | parser parse: line ]
 			thenSelect: #notNil.
-	self assert: json size equals: 134.
+	self assert: json size equals: 139.
 	self assert: (json collect: [ :d | d at: 'workshop' ]) asSet size equals: 8.
 	self assert: (json collect: [ :d | d at: 'role' ]) asSet size equals: 2.
 	^ json

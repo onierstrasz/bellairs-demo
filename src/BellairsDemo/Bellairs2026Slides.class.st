@@ -12,27 +12,41 @@ Bellairs2026Slides >> bellairsParserPage [
 	<gtExample>
 	<noTest>
 	^ (LePage named: 'Parsing the Bellairs participants pages')
-		addSnippet: (LeTextSnippet new
-				string: 'We extract all the HTML source code, and we write a tiny PEG parser to extract the data and build a JSON.';
-				yourself);
-		addSnippet: (LePharoSnippet new
-				code: 'allLines := BellairsParserExamples new allLines';
-				yourself);
-		addSnippet: (LePharoSnippet new
-				code: 'parser := BellairsParser new';
-				yourself);
-		addSnippet: (LePharoSnippet new
-				code: 'json := (allLines collect: [ :line | parser parse: line ] thenSelect: #notNil) asGtJson';
-				yourself);
-		yourself
+	addSnippet: (LeTextSnippet new
+			string: 'We extract all the HTML source code, and we write a tiny PEG parser to extract the data and build a JSON.';
+			yourself);
+	addSnippet: (LePharoSnippet new
+			code: 'allLines := BellairsParserExamples new allLines';
+			yourself);
+	addSnippet: (LePharoSnippet new
+			code: 'parser := BellairsParser new';
+			yourself);
+	addSnippet: (LePharoSnippet new
+			code: 'json := (allLines
+					collect: [ :line | parser parse: line ] 
+					thenSelect: #notNil)
+						asGtJson';
+			yourself);
+	yourself
 ]
 
 { #category : 'slides' }
 Bellairs2026Slides >> bellairsParserPage: aSlide [
 	<gtSlide>
 <text: 
-'Bellairs workshop
-'>
+'# Parsing the Bellairs participants pages
+
+This sounds like a job for an island parser! We start by caching all the files and extracting their contents, line by line.
+
+We incrementally build a tiny island parser using PetitParser, a PEG-based scannerless parser framework.
+In the *Tree* view of the parser instance we can see how the parser is composed of a bunch of smaller parsers.
+In the *Meta* view we see how each component parser picks up some piece of information from the source lines.
+Luckily the input is highly regular, so we have only very few special cases to handle.
+Each parser component either returns a dictionary of the values found, or nil.
+
+The whole parser is less than 100 lines of code, and was iteratively developed with minimal effort.
+
+We apply the parser to all the lines, collect the non-empty dictionaries, and turn that into a JSON object.'>
 	^ aSlide lepiterPage
 		setPriority;
 		startPage: (self database pageNamed: 'Parsing the Bellairs participants pages')
@@ -47,14 +61,13 @@ Bellairs2026Slides >> bellairsRegistry [
 { #category : 'slides' }
 Bellairs2026Slides >> bellairsRegistry: aSlide [
 	<gtSlide>
-<text: 
-'Bellairs workshop
+	<text: 'Bellairs workshop
 '>
-			^ aSlide labelAndElement
+	^ aSlide labelAndElement
 		setPriority;
 		newFadedText: 'Exploring the Bellairs data';
-		element: [ (GtPager
-				createWrappedOn: (GtInspector forObject: self bellairsRegistry))
+		element: [ (GtPagerSettings usedPager
+				createWrappedOn: (GtInspectorTool forObject: self bellairsRegistry))
 				maximized ]
 ]
 
@@ -93,7 +106,9 @@ Bellairs2026Slides >> participantsHtml [
 Bellairs2026Slides >> participantsHtml: aSlide [
 	<gtSlide>
 <text: 
-'Bellairs workshop
+'# The HTML source code looks pretty regular
+
+If we take a closer look at the source code of the web pages, we discover that they are formatted consistently over the years. Maybe we can exploit this fact to extract the raw data.
 '>
 	^ aSlide labelAndElement
 		setPriority;
@@ -116,18 +131,17 @@ Bellairs2026Slides >> participantsWebpages [
 { #category : 'slides' }
 Bellairs2026Slides >> participantsWebpages: aSlide [
 	<gtSlide>
-<text: 
-'Bellairs workshop
+	<text:
+'# Legacy Bellairs participant web pages
+
+Luckily I could find a bunch of legacy web pages of past events.
+Clicking around I can see who participated in a given year, but I cannot get an overview of who was a repeat participant, who were the organizers, and so on. I am stuck with the views that were hard-coded in the web pages.
 '>
-"	^ aSlide lepiterPage
-		setPriority;
-		startPage: (self database pageNamed: 'Participants webpages')"
-		
-					^ aSlide labelAndElement
+	^ aSlide labelAndElement
 		setPriority;
 		newFadedText: 'We have webpages listing Bellairs participants going back several years.';
-		element: [ (GtPager
-				createWrappedOn: (self  participantsWebpages gtItemsFor: GtPhlowView empty))
+		element: [ (GtPagerSettings usedPager
+				createWrappedOn: (GtInspectorTool forObject: self participantsWebpages viewSelector: #gtItemsFor:))
 				maximized ]
 ]
 
@@ -157,7 +171,10 @@ Bellairs2026Slides >> title: aSlide [
 <text:
 '# Applying Moldable Development to the Bellairs workshop web pages
 
-Hi. I''m Oscar Nierstrasz. I''m a retired Professor at the University of Bern
+Hi. I''m Oscar Nierstrasz. I''m a retired Professor at the University of Bern.
+I''ve been working the past few years for feenk, a company specialized in modernizing legacy systems.
+We use a process called “Moldable Development” to make software systems explainable.
+Rather than just talk about it, I''d like to show you how it works by applying it to the Bellairs workshop web pages.
 '>
 
 	^ (aSlide titleWithFooter)
@@ -306,7 +323,13 @@ Bellairs2026Slides >> workshopWebUrl [
 Bellairs2026Slides >> workshopWebpage: aSlide [
 	<gtSlide>
 <text: 
-'Bellairs workshop
+'# What is this workshop?
+
+When Gunter invited me to this year''s wrkshop, I had lots of questions.
+- What is the history of this workshop?
+- What topics have been addressed over time?
+- Who are the organizers?
+- Who has participated regularly over the years?
 '>
 	^ aSlide labelAndElement
 		setPriority;

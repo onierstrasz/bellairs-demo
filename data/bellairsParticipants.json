@@ -968,6 +968,14 @@
 		"affiliation" : "Université de Toulouse"
 	},
 	{
+		"person" : "Istvan David",
+		"url" : "https://istvandavid.com/",
+		"role" : "Participant",
+		"country" : "Canada",
+		"workshop" : "2026 Continuous Software Engineering at Bellairs 2026",
+		"affiliation" : "McMaster University"
+	},
+	{
 		"person" : "Thomas Degueule",
 		"url" : "https://tdegueul.github.io/",
 		"role" : "Participant",
@@ -982,6 +990,14 @@
 		"country" : "France",
 		"workshop" : "2026 Continuous Software Engineering at Bellairs 2026",
 		"affiliation" : "IRISA / Université de Rennes 1"
+	},
+	{
+		"person" : "Bernd Freisleben",
+		"url" : "https://www.uni-marburg.de/en/fb12/research-groups/distsys/about-us/people/personal-pages/bernd-freisleben",
+		"role" : "Participant",
+		"country" : "Germany",
+		"workshop" : "2026 Continuous Software Engineering at Bellairs 2026",
+		"affiliation" : "Philipps-Universität Marburg"
 	},
 	{
 		"person" : "Jean-Marc Jézéquel",
@@ -1000,12 +1016,27 @@
 		"affiliation" : "University of Waterloo"
 	},
 	{
+		"person" : "Mira Mezini",
+		"url" : "https://www.stg.tu-darmstadt.de/main_stg/staff_stg/mira_mezini_1.en.jsp",
+		"role" : "Participant",
+		"country" : "Germany",
+		"workshop" : "2026 Continuous Software Engineering at Bellairs 2026",
+		"affiliation" : "Technische Universität Darmstadt"
+	},
+	{
 		"person" : "Judith Michael",
 		"url" : "https://judithmichael.github.io/",
 		"role" : "Participant",
 		"country" : "Germany",
 		"workshop" : "2026 Continuous Software Engineering at Bellairs 2026",
-		"affiliation" : "RWTH Aachen"
+		"affiliation" : "Universität Regensburg"
+	},
+	{
+		"person" : "Kalvin Thuan-Phong Khuu",
+		"country" : "Canada",
+		"role" : "Participant",
+		"workshop" : "2026 Continuous Software Engineering at Bellairs 2026",
+		"affiliation" : "McMaster University"
 	},
 	{
 		"person" : "Martin Monperrus",
@@ -1038,6 +1069,14 @@
 		"country" : "Switzerland",
 		"workshop" : "2026 Continuous Software Engineering at Bellairs 2026",
 		"affiliation" : "feenk.com"
+	},
+	{
+		"person" : "Sebastian Proksch",
+		"url" : "https://proks.ch/",
+		"role" : "Participant",
+		"country" : "The Netherlands",
+		"workshop" : "2026 Continuous Software Engineering at Bellairs 2026",
+		"affiliation" : "Technische Universiteit Delft"
 	},
 	{
 		"person" : "Georges Aaron Randrianaina",

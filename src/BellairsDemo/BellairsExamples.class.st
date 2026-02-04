@@ -70,9 +70,9 @@ BellairsExamples >> firstOrganizer [
 	registry := BellairsExamples new bellairsRegistry.
 	person := registry persons detect: #isOrganizer.
 	self assert: person isOrganizer.
-	self assert: person workshops size equals: 7.
-	self assert: person affiliations size equals: 1.
-	self assert: person participations size equals: 7.
+	self assert: person workshops size equals: 3.
+	self assert: person affiliations size equals: 2.
+	self assert: person participations size equals: 3.
 	^ person
 ]
 
@@ -111,9 +111,9 @@ BellairsExamples >> firstWorkshop [
 	workshop := registry workshops first.
 	self assert: workshop registry equals: registry.
 	self assert: workshop json equals: registry json.
-	self assert: workshop persons size equals: 16.
-	self assert: workshop affiliations size equals: 11.
-	self assert: workshop countries size equals: 5.
-	self assert: workshop participations size equals: 16.
+	self assert: workshop persons size equals: 21.
+	self assert: workshop affiliations size equals: 14.
+	self assert: workshop countries size equals: 6.
+	self assert: workshop participations size equals: 21.
 	^ workshop
 ]
