@@ -176,7 +176,7 @@
 								"__type" : "time",
 								"time" : {
 									"__type" : "dateAndTime",
-									"dateAndTimeString" : "2026-02-03T16:13:17.45876+01:00"
+									"dateAndTimeString" : "2026-02-04T10:43:38.169453+01:00"
 								}
 							},
 							"uid" : {
@@ -186,7 +186,7 @@
 							"paragraphStyle" : {
 								"__type" : "textStyle"
 							},
-							"string" : ""
+							"string" : "*Title:* Applying Moldable Development to the Bellairs workshops\n\n*Abstract:*\nMoldable development is an approach to making software systems explainable by creating many tiny, contextual tools to the software to answer stakeholder questions. We demonstrate moldable development by applying it to the Bellairs workshop webpages, turning the static pages into an explorable and explainable model of the domain entities implicit in the web pages."
 						}
 					]
 				},
@@ -209,7 +209,7 @@
 					"__type" : "time",
 					"time" : {
 						"__type" : "dateAndTime",
-						"dateAndTimeString" : "2026-02-03T16:13:14.083909+01:00"
+						"dateAndTimeString" : "2026-02-04T09:21:38.226266+01:00"
 					}
 				},
 				"uid" : {
@@ -219,7 +219,7 @@
 				"paragraphStyle" : {
 					"__type" : "textStyle"
 				},
-				"string" : "# Abstract"
+				"string" : "# Abstract "
 			}
 		]
 	},

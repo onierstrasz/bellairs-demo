@@ -155,16 +155,16 @@ Bellairs2026Slides >> slidePriorities [
 Bellairs2026Slides >> title: aSlide [ 
 	<gtSlide>
 <text:
-'# Applying Moldable Development to the Bellairs workshops
+'# Applying Moldable Development to the Bellairs workshop web pages
 
-
+Hi. I''m Oscar Nierstrasz. I''m a retired Professor at the University of Bern
 '>
 
 	^ (aSlide titleWithFooter)
 		setPriority;
 		titleBottomPadding: 30;
 		titleWithFormat: (self asTitle: 'Applying Moldable Development');
-		subtitleWithFormat: (self asBigText: 'to the Bellairs workshops');
+		subtitleWithFormat: (self asBigText: 'to the Bellairs workshop web pages');
 		footerWithFormat: (self asBigCode: 'oscar.nierstrasz@feenk.com')
 ]
 
