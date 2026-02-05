@@ -68,9 +68,35 @@ Bellairs2026Slides >> bellairsRegistry: aSlide [
 '# Exploring the Bellairs data
 
 Now that we have wrapped the extracted data into domain entities, we can *mold* them with little contextual tools to answer the questions we have about them.
-'>
+
+What are the topics of the various workshops? We see them here, and we can dive into the details.
+
+Who attended? We see who they were and how often they attended.
+
+Who were the organizers? Always the same Gang of Five.
+
+Which countries are the participants from? Canada, France and Germany are the big winners. Curiously it seems only one person ever attended from the USA.
+
+And who attended which workshops? Here we see a graph of all attendees with organizers highlighted in red. We can also dive into 2026 and see who at this workshop attended which workshops in the past. Now we can clearly see that there is a cohort of old timers, as well as a large batch of newcomers.
+
+OK, let''s take a step back and consider what we have seen. First of all, we wrapped some data to create domain objects. Then we *molded* these objects to answer questions we had. Note that everything we have seen are just object inspectors on domain objects. Each *view* is a little, contextual tool.
+
+Let''s take a look at the implementation of some of these views. Don''t pay too much attention to the details, but note that they are all pretty similar, boilerplate code. In fact, many of these can be generated automatically as we explore the domain objects.
+
+The only view that is a little bit specialized is the graph visualization, but as we see, this is also specified in a just a few lines of code.
+
+In addition to contextual views, we can also have contextual actions, such as opening a webpage or extracting a CSV.
+And we can have contextual searches as well.
+
+So far I have only shown you that we can mold the object inspector, but the other IDE tools are moldable as well, such as the code editor and the debugger.'>
 <demo:
-'- '>
+'- Show the *Workshops* and other views in sequence.
+- Show the code of the first few views.
+- Show the code of the *Graph* view with the mondrian code.
+- Show the actions of the 2026 workshop, and select CSV and webpage.
+- Open the CSV into the O/S (in Excel).
+- Open the search tool and select "Sw".
+- Open a class Coder and show some of the views.'>
 	^ aSlide labelAndElement
 		setPriority;
 		newFadedText: 'Exploring the Bellairs data';
@@ -101,19 +127,6 @@ The registry itself wraps the entire extracted JSON, so we can use it to look an
 		setPriority;
 		newFadedText: 'Modeling the Bellairs domain objects';
 		scenery: Bellairs2026Slides >> #umlScenery
-]
-
-{ #category : 'slides' }
-Bellairs2026Slides >> lessons: aSlide [
-	<gtSlide>
-	<text: 'Text with a paragraph'>
-	^ aSlide paragraph
-		setPriority;
-		subtitleWithFormat: (self asSubtitle: 'Outline');
-		paragraphWithFormat: (self
-				asText: 'Paragraph body.
-Possibly over multiple lines.
-')
 ]
 
 { #category : 'examples' }
@@ -181,12 +194,59 @@ Bellairs2026Slides >> slidePriorities [
 		#participantsWebpages:
 		#participantsHtml:
 		#bellairsParserPage:
-		
 		#domainModelingScenery:
-		
 		#bellairsRegistry:
-		#lessons:
+		#summary:
+		#thisSlideShow:
+		#whatNext:
 	)
+]
+
+{ #category : 'slides' }
+Bellairs2026Slides >> summary: aSlide [
+	<gtSlide>
+	<text:
+'# Summary
+
+Summing up, moldable development is a way to make software systems explainable by making it cheap to create lots of tiny contextual tools that adapt the IDE tools to answer question you have about the domain.
+
+No matter what the domain, whether it be static data, log files, legacy code, a running system, a web API, or whatever, the moldable development process is the same: extract objects, ask questions, create contextual tools, repeat.
+'>
+	^ aSlide paragraph
+		setPriority;
+		subtitleWithFormat: (self asSubtitle: 'Summary');
+		paragraphWithFormat: (self
+				asText:
+'
+— Establish some questions you want to answer.
+— Create domain objects (if they don''t already exist).
+— Interact with the objects to answer questions.
+— Turn the interactions into contextual tools.
+— Create new objects, if you need them.
+— Repeat.
+')
+]
+
+{ #category : 'slides' }
+Bellairs2026Slides >> thisSlideShow: aSlide [
+	<gtSlide>
+	<text:
+'# Exploring the slideshow
+
+I''d  like to emphasize that GT is itself built using moldable development, and contains literally thousands of tiny, contextual tools to make GT itself explainable..
+
+As a closing example, consider that this slideshow itself is just a moldable object within GT. The slideshow authoring environment is nothing but an object inspector on a slideshow instance decorated with contextual views, actions and searches. Here''s the code of this slide.
+'>
+<demo:
+'
+— Show several of the views in sequence.
+— Click on this slide to show its code.'>
+	^ aSlide labelAndElement
+		setPriority;
+		newFadedText: 'Eating our own dog food';
+		element: [ (GtPagerSettings usedPager
+				createWrappedOn: (GtInspectorTool forObject: self))
+				maximized ]
 ]
 
 { #category : 'slides' }
@@ -312,6 +372,27 @@ Bellairs2026Slides >> umlScenery [
 		to: item3.
 	scenery storeStringMethodName: 'Bellairs2026Slides>>#umlScenery'.
 	^ scenery
+]
+
+{ #category : 'slides' }
+Bellairs2026Slides >> whatNext: aSlide [
+	<gtSlide>
+	<text:
+'# What''s next?
+
+Glamorous Toolkoit is an open-source which we fund through contracts with customers. If you''re interested in learning more, talk to me, or download it and try it yourself.'>
+	^ aSlide paragraph
+		setPriority;
+		subtitleWithFormat: (self asSubtitle: 'What''s next?');
+		paragraphWithFormat: (self
+				asText:
+'
+— Download GT from '), (self asCode: 'gtoolkit.com'), (self asText: '
+— Try out case studies and tutorials within GT.
+— Join the Discord Server.
+— Ask questions.
+— Have fun!
+')
 ]
 
 { #category : 'examples' }

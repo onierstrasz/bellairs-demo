@@ -99,6 +99,8 @@ BellairsParticipation >> summary [
 			self}.
 		{'workshop'.
 			self workshop}.
+		{'person'.
+			self person}.
 		{'role'.
 			self role}.
 		{'affiliation'.

@@ -123,7 +123,7 @@ TParticipationGroupViews >> gtPersonsFor: aView [
 TParticipationGroupViews >> gtSpotterForParticipations: aSearch [
 	<gtSearch>
 	^ aSearch list
-		title: 'Fields';
+		title: 'Participations';
 		priority: 10;
 		items: [ self participations items ];
 		itemsLimit: Float infinity;
