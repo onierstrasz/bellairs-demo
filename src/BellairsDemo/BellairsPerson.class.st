@@ -15,6 +15,11 @@ Class {
 
 { #category : 'accessing' }
 BellairsPerson >> affiliation [
+	^ self affiliations first
+]
+
+{ #category : 'accessing' }
+BellairsPerson >> affiliationName [
 	^ self affiliations size = 1
 		ifTrue: [ self affiliations first name ]
 		ifFalse: [ self affiliations first name , ' + '

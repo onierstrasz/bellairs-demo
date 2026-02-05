@@ -39,43 +39,6 @@
 				"code" : "Bellairs2026Slides new"
 			},
 			{
-				"__type" : "textSnippet",
-				"children" : {
-					"__type" : "snippets",
-					"items" : [ ]
-				},
-				"createEmail" : {
-					"__type" : "email",
-					"emailString" : "<unknown>"
-				},
-				"createTime" : {
-					"__type" : "time",
-					"time" : {
-						"__type" : "dateAndTime",
-						"dateAndTimeString" : "2025-10-22T14:37:20.305089+02:00"
-					}
-				},
-				"editEmail" : {
-					"__type" : "email",
-					"emailString" : "<unknown>"
-				},
-				"editTime" : {
-					"__type" : "time",
-					"time" : {
-						"__type" : "dateAndTime",
-						"dateAndTimeString" : "2026-02-05T08:46:51.761733+01:00"
-					}
-				},
-				"uid" : {
-					"__type" : "uid",
-					"uidString" : "3WeBUCD+DQCWpelQCe8ZiA=="
-				},
-				"paragraphStyle" : {
-					"__type" : "textStyle"
-				},
-				"string" : "The 2026 [workshop  schedule](https://bellairs2026.ece.mcgill.ca/schedule.htm).\n\nNB: This is *not* the 5 min presentation, but a longer evening talk ~ 15-20 min + Q&A.\n\nStart with the idea of using GT and Moldable Development to explain software systems.\n\nAlways motivate by the questions!\nWhat do we want to know about Bellairs workshop?\nWe see many web pages, but don't have an overview.\n\nWe use PP to extract clean data from the pages as a JSON, and then use that to build a domain model.\n\nIt is similar for other systems:\nanalyzing data — write a PP parser\nanalyzing source code — use a SmaCC parser\nanalyzing web-hosted data — connect to server\nanalyzing live language system — a use language bridge\n***Caveat:*** there seem to be some issues when exploring the registry from within slides ..."
-			},
-			{
 				"__type" : "pharoSnippet",
 				"children" : {
 					"__type" : "snippets",
@@ -106,6 +69,40 @@
 				"uid" : {
 					"__type" : "uid",
 					"uidString" : "Crbr78j/DQCjoILmDXtWog=="
+				},
+				"code" : "BellairsExamples new bellairsRegistry"
+			},
+			{
+				"__type" : "pharoSnippet",
+				"children" : {
+					"__type" : "snippets",
+					"items" : [ ]
+				},
+				"createEmail" : {
+					"__type" : "email",
+					"emailString" : "<unknown>"
+				},
+				"createTime" : {
+					"__type" : "time",
+					"time" : {
+						"__type" : "dateAndTime",
+						"dateAndTimeString" : "2026-02-05T09:17:14.963279+01:00"
+					}
+				},
+				"editEmail" : {
+					"__type" : "email",
+					"emailString" : "<unknown>"
+				},
+				"editTime" : {
+					"__type" : "time",
+					"time" : {
+						"__type" : "dateAndTime",
+						"dateAndTimeString" : "2026-02-05T09:17:21.057012+01:00"
+					}
+				},
+				"uid" : {
+					"__type" : "uid",
+					"uidString" : "r7ou2Yj5Sue3QWwMO5ar3Q=="
 				},
 				"code" : "BellairsExamples new bellairsRegistry"
 			},
@@ -183,6 +180,81 @@
 					"__type" : "textStyle"
 				},
 				"string" : "# Abstract "
+			},
+			{
+				"__type" : "textSnippet",
+				"children" : {
+					"__type" : "snippets",
+					"items" : [
+						{
+							"__type" : "textSnippet",
+							"children" : {
+								"__type" : "snippets",
+								"items" : [ ]
+							},
+							"createEmail" : {
+								"__type" : "email",
+								"emailString" : "<unknown>"
+							},
+							"createTime" : {
+								"__type" : "time",
+								"time" : {
+									"__type" : "dateAndTime",
+									"dateAndTimeString" : "2025-10-22T14:37:20.305089+02:00"
+								}
+							},
+							"editEmail" : {
+								"__type" : "email",
+								"emailString" : "<unknown>"
+							},
+							"editTime" : {
+								"__type" : "time",
+								"time" : {
+									"__type" : "dateAndTime",
+									"dateAndTimeString" : "2026-02-05T08:46:52.282488+01:00"
+								}
+							},
+							"uid" : {
+								"__type" : "uid",
+								"uidString" : "3WeBUCD+DQCWpelQCe8ZiA=="
+							},
+							"paragraphStyle" : {
+								"__type" : "textStyle"
+							},
+							"string" : "The 2026 [workshop  schedule](https://bellairs2026.ece.mcgill.ca/schedule.htm).\n\nNB: This is *not* the 5 min presentation, but a longer evening talk ~ 15-20 min + Q&A.\n\nStart with the idea of using GT and Moldable Development to explain software systems.\n\nAlways motivate by the questions!\nWhat do we want to know about Bellairs workshop?\nWe see many web pages, but don't have an overview.\n\nWe use PP to extract clean data from the pages as a JSON, and then use that to build a domain model.\n\nIt is similar for other systems:\nanalyzing data — write a PP parser\nanalyzing source code — use a SmaCC parser\nanalyzing web-hosted data — connect to server\nanalyzing live language system — a use language bridge\n\n***Caveat:*** there seem to be some issues when exploring the registry from within slides ..."
+						}
+					]
+				},
+				"createEmail" : {
+					"__type" : "email",
+					"emailString" : "<unknown>"
+				},
+				"createTime" : {
+					"__type" : "time",
+					"time" : {
+						"__type" : "dateAndTime",
+						"dateAndTimeString" : "2026-02-05T08:47:00.956066+01:00"
+					}
+				},
+				"editEmail" : {
+					"__type" : "email",
+					"emailString" : "<unknown>"
+				},
+				"editTime" : {
+					"__type" : "time",
+					"time" : {
+						"__type" : "dateAndTime",
+						"dateAndTimeString" : "2026-02-05T08:47:03.541972+01:00"
+					}
+				},
+				"uid" : {
+					"__type" : "uid",
+					"uidString" : "t3DcJIQUR9OKAbigaeMTwg=="
+				},
+				"paragraphStyle" : {
+					"__type" : "textStyle"
+				},
+				"string" : "# Notes"
 			}
 		]
 	},

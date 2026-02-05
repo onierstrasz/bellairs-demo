@@ -19,7 +19,7 @@ Class {
 { #category : 'accessing' }
 BellairsParticipationGroup >> affiliations [
 	^ (self collect: [ :p | self registry affiliationNamed: p affiliation name ])
-		copyWithoutDuplicates
+		copyWithoutDuplicates sortedAs: #name
 ]
 
 { #category : 'requirement' }

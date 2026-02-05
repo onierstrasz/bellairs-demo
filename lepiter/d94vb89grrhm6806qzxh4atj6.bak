@@ -100,7 +100,7 @@
 					"__type" : "time",
 					"time" : {
 						"__type" : "dateAndTime",
-						"dateAndTimeString" : "2026-02-03T16:45:40.640114+01:00"
+						"dateAndTimeString" : "2026-02-03T16:46:34.791404+01:00"
 					}
 				},
 				"uid" : {
@@ -110,7 +110,7 @@
 				"paragraphStyle" : {
 					"__type" : "textStyle"
 				},
-				"string" : "For the moment we have hand-crafted the diagram by instantiating the classes from the package, and adding an example for each class. The links are "
+				"string" : "For the moment we have hand-crafted the diagram by instantiating the classes from the package, and adding an example for each class. The connections are made by hand, whereas they should be actual navigations."
 			},
 			{
 				"__type" : "textSnippet",
