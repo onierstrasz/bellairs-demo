@@ -380,7 +380,7 @@ Bellairs2026Slides >> whatNext: aSlide [
 	<text:
 '# What''s next?
 
-Glamorous Toolkoit is an open-source which we fund through contracts with customers. If you''re interested in learning more, talk to me, or download it and try it yourself.'>
+Glamorous Toolkoit is an open-source project which we fund through contracts with customers. If you''re interested in learning more, talk to me, or download it and try it yourself.'>
 	^ aSlide paragraph
 		setPriority;
 		subtitleWithFormat: (self asSubtitle: 'What''s next?');
