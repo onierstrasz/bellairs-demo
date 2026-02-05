@@ -170,7 +170,7 @@ Luckily I could find a bunch of legacy web pages of past events.
 
 Clicking around I can see who participated in a given year, but I cannot get an overview of who was a repeat participant, who were the organizers, and so on. I am stuck with the views that were hard-coded in the web pages.
 
-BTW, notice that what we see here at the right is actually an object inspectoron a `ZnUrl` object. You might not recognize it as such because you are probably used to seeing just the *Raw* view here.'>
+BTW, notice that what we see here at the right is actually an object inspector on a `ZnUrl` object. You might not recognize it as such because you are probably used to seeing just the *Raw* view here.'>
 <demo: 
 '- Show the Webpage view of a few urls.
 - Show the raw view.'>
