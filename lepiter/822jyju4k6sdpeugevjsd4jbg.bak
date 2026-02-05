@@ -5,43 +5,6 @@
 		"__type" : "snippets",
 		"items" : [
 			{
-				"__type" : "textSnippet",
-				"children" : {
-					"__type" : "snippets",
-					"items" : [ ]
-				},
-				"createEmail" : {
-					"__type" : "email",
-					"emailString" : "<unknown>"
-				},
-				"createTime" : {
-					"__type" : "time",
-					"time" : {
-						"__type" : "dateAndTime",
-						"dateAndTimeString" : "2025-10-22T14:37:20.305089+02:00"
-					}
-				},
-				"editEmail" : {
-					"__type" : "email",
-					"emailString" : "<unknown>"
-				},
-				"editTime" : {
-					"__type" : "time",
-					"time" : {
-						"__type" : "dateAndTime",
-						"dateAndTimeString" : "2026-02-03T16:56:35.82777+01:00"
-					}
-				},
-				"uid" : {
-					"__type" : "uid",
-					"uidString" : "3WeBUCD+DQCWpelQCe8ZiA=="
-				},
-				"paragraphStyle" : {
-					"__type" : "textStyle"
-				},
-				"string" : "The 2026 [workshop  schedule](https://bellairs2026.ece.mcgill.ca/schedule.htm).\n\nNB: This is *not* the 5 min presentation, but a longer evening talk ~ 15-20 min + Q&A.\n\nStart with the idea of using GT and Moldable Development to explain software systems.\n\nAlways motivate by the questions!\nWhat do we want to know about Bellairs workshop?\nWe see many web pages, but don't have an overview.\n\nWe use PP to extract clean data from the pages as a JSON, and then use that to build a domain model.\n\nIt is similar for other systems:\nanalyzing data — write a PP parser\nanalyzing source code — use a SmaCC parser\nanalyzing web-hosted data — connect to server\nanalyzing live language system — a use language bridge\n"
-			},
-			{
 				"__type" : "pharoSnippet",
 				"children" : {
 					"__type" : "snippets",
@@ -89,7 +52,7 @@
 					"__type" : "time",
 					"time" : {
 						"__type" : "dateAndTime",
-						"dateAndTimeString" : "2025-11-12T16:12:24.044054+01:00"
+						"dateAndTimeString" : "2025-10-22T14:37:20.305089+02:00"
 					}
 				},
 				"editEmail" : {
@@ -100,17 +63,17 @@
 					"__type" : "time",
 					"time" : {
 						"__type" : "dateAndTime",
-						"dateAndTimeString" : "2025-11-12T16:12:46.251526+01:00"
+						"dateAndTimeString" : "2026-02-05T08:46:51.761733+01:00"
 					}
 				},
 				"uid" : {
 					"__type" : "uid",
-					"uidString" : "URK47cj/DQChwheADXtWog=="
+					"uidString" : "3WeBUCD+DQCWpelQCe8ZiA=="
 				},
 				"paragraphStyle" : {
 					"__type" : "textStyle"
 				},
-				"string" : "***Caveat:*** there seem to be some issues when exploring the registry from within slides ..."
+				"string" : "The 2026 [workshop  schedule](https://bellairs2026.ece.mcgill.ca/schedule.htm).\n\nNB: This is *not* the 5 min presentation, but a longer evening talk ~ 15-20 min + Q&A.\n\nStart with the idea of using GT and Moldable Development to explain software systems.\n\nAlways motivate by the questions!\nWhat do we want to know about Bellairs workshop?\nWe see many web pages, but don't have an overview.\n\nWe use PP to extract clean data from the pages as a JSON, and then use that to build a domain model.\n\nIt is similar for other systems:\nanalyzing data — write a PP parser\nanalyzing source code — use a SmaCC parser\nanalyzing web-hosted data — connect to server\nanalyzing live language system — a use language bridge\n***Caveat:*** there seem to be some issues when exploring the registry from within slides ..."
 			},
 			{
 				"__type" : "pharoSnippet",
@@ -176,7 +139,7 @@
 								"__type" : "time",
 								"time" : {
 									"__type" : "dateAndTime",
-									"dateAndTimeString" : "2026-02-04T10:43:32.264988+01:00"
+									"dateAndTimeString" : "2026-02-04T10:43:38.169453+01:00"
 								}
 							},
 							"uid" : {
@@ -186,7 +149,7 @@
 							"paragraphStyle" : {
 								"__type" : "textStyle"
 							},
-							"string" : "*Title:* Applying Moldable Development to the Bellairs workshops\n\n*Abstract:*\nMoldable development is an approach to making software systems explainable by creating many tiny, contextual tools to the software to answer stakeholder questions. We demonstrate moldable development by applying it to the Bellairs workshop webpages, turning the static pages into an explorable and explainable model of the domain entitioe"
+							"string" : "*Title:* Applying Moldable Development to the Bellairs workshops\n\n*Abstract:*\nMoldable development is an approach to making software systems explainable by creating many tiny, contextual tools to the software to answer stakeholder questions. We demonstrate moldable development by applying it to the Bellairs workshop webpages, turning the static pages into an explorable and explainable model of the domain entities implicit in the web pages."
 						}
 					]
 				},

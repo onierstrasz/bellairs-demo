@@ -36,7 +36,7 @@ Bellairs2026Slides >> bellairsParserPage: aSlide [
 <text: 
 '# Parsing the Bellairs participants pages
 
-This sounds like a job for an island parser! We start by caching all the files and extracting their contents, line by line.
+This sounds like a job for an island parser! We start by caching all the files and extracting their contents, line by line. By the way, please note that this is just an object inspector on an `Array` of `ByteString` objects.
 
 We incrementally build a tiny island parser using PetitParser, a PEG-based scannerless parser framework.
 In the *Tree* view of the parser instance we can see how the parser is composed of a bunch of smaller parsers.
@@ -44,9 +44,17 @@ In the *Meta* view we see how each component parser picks up some piece of infor
 Luckily the input is highly regular, so we have only very few special cases to handle.
 Each parser component either returns a dictionary of the values found, or nil.
 
+Notice that again what we see at the right is just an object inspector, but instead of having just the usual *Raw* view, we have views specific to the context of a parser object, such as the *Tree* view.
+
 The whole parser is less than 100 lines of code, and was iteratively developed with minimal effort.
 
-We apply the parser to all the lines, collect the non-empty dictionaries, and turn that into a JSON object.'>
+We apply the parser to all the lines, collect the non-empty dictionaries, and turn that into a JSON object.
+Once again, we are inspecting a `GtJson` object at the right, decorated with some views specific to JSONs.'>
+<demo:
+'- Inspect each of the three snippets in turn.
+- Dive into some of the strings of the array of lines.
+- Show the *Tree* view and *Meta* view ofthe parser.
+- Show The two JSON-specific views.'>
 	^ aSlide lepiterPage
 		setPriority;
 		startPage: (self database pageNamed: 'Parsing the Bellairs participants pages')
@@ -105,15 +113,14 @@ Bellairs2026Slides >> participantsHtml [
 { #category : 'slides' }
 Bellairs2026Slides >> participantsHtml: aSlide [
 	<gtSlide>
-<text: 
-'# The HTML source code looks pretty regular
+	<text: '# The HTML source code looks pretty regular
 
 If we take a closer look at the source code of the web pages, we discover that they are formatted consistently over the years. Maybe we can exploit this fact to extract the raw data.
 '>
 	^ aSlide labelAndElement
 		setPriority;
 		newFadedText: 'Hm. This data looks pretty regular';
-		element: [ self participantsHtml  gtLiveFor: GtPhlowProtoView new ]
+		element: [ self participantsHtml gtLiveFor: GtPhlowProtoView new ]
 ]
 
 { #category : 'examples' }
@@ -136,7 +143,13 @@ Bellairs2026Slides >> participantsWebpages: aSlide [
 
 Luckily I could find a bunch of legacy web pages of past events.
 Clicking around I can see who participated in a given year, but I cannot get an overview of who was a repeat participant, who were the organizers, and so on. I am stuck with the views that were hard-coded in the web pages.
+
+BTW, notice that what we see here at the right is actually an object inspectoron a `ZnUrl` object.
+You might not recognize it as such because you are probably used to seeing just the *Raw* view here.
 '>
+<demo: 
+'- Show the Webpage view of a few urls.
+- Show the raw view.'>
 	^ aSlide labelAndElement
 		setPriority;
 		newFadedText: 'We have webpages listing Bellairs participants going back several years.';
