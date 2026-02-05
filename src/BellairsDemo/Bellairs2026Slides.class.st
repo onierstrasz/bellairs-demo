@@ -122,7 +122,7 @@ The registry itself wraps the entire extracted JSON, so we can use it to look an
 <demo:
 '- Inspect the participation example.
 - Go to the Raw view to show the wrapped dictionary data.
-- Click on the registry example and show the Raw view withe the JSON and the dictionaries for looking up persons etc.'>
+- Click on the registry example and show the Raw view with the JSON and the dictionaries for looking up persons etc.'>
 	^ aSlide labelAndScenery
 		setPriority;
 		newFadedText: 'Modeling the Bellairs domain objects';
