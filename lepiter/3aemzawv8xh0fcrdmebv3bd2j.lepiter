@@ -103,51 +103,14 @@
 					"__type" : "time",
 					"time" : {
 						"__type" : "dateAndTime",
-						"dateAndTimeString" : "2026-03-01T09:00:38.905029-04:00"
+						"dateAndTimeString" : "2026-03-01T12:08:53.090079-04:00"
 					}
 				},
 				"uid" : {
 					"__type" : "uid",
 					"uidString" : "bwhZTHAtTAGavkAJIvn7nw=="
 				},
-				"code" : "cohortDict := Dictionary new.\rregistry := BellairsExamples new bellairsRegistry.\rregistry workshops\r\tdo: [ :w | \r\t\tw participations\r\t\t\tdo: [ :p1 | \r\t\t\t\tw participations\r\t\t\t\t\tdo: [ :p2 | \r\t\t\t\t\t\tp1 = p2\r\t\t\t\t\t\t\tifFalse: [ | pair |\r\t\t\t\t\t\t\t\tpair := {p1 person.\r\t\t\t\t\t\t\t\t\t\tp2 person} asSet.\r\t\t\t\t\t\t\t\t(cohortDict at: pair ifAbsentPut: OrderedCollection new)\r\t\t\t\t\t\t\t\t\taddAll: {p1.\r\t\t\t\t\t\t\t\t\t\t\tp2} ] ] ] ].\rcohortDict associations sort: [:a :b | a value size > b value size ]"
-			},
-			{
-				"__type" : "textSnippet",
-				"children" : {
-					"__type" : "snippets",
-					"items" : [ ]
-				},
-				"createEmail" : {
-					"__type" : "email",
-					"emailString" : "<unknown>"
-				},
-				"createTime" : {
-					"__type" : "time",
-					"time" : {
-						"__type" : "dateAndTime",
-						"dateAndTimeString" : "2026-03-01T09:02:02.984328-04:00"
-					}
-				},
-				"editEmail" : {
-					"__type" : "email",
-					"emailString" : "<unknown>"
-				},
-				"editTime" : {
-					"__type" : "time",
-					"time" : {
-						"__type" : "dateAndTime",
-						"dateAndTimeString" : "2026-03-01T09:06:31.912304-04:00"
-					}
-				},
-				"uid" : {
-					"__type" : "uid",
-					"uidString" : "wdaALfwfT6q7QMwSUs6sog=="
-				},
-				"paragraphStyle" : {
-					"__type" : "textStyle"
-				},
-				"string" : "*To do:* We are missing equality tests for all the domain objects, so we can't easily eliminate duplicates.\nWe need this at least for participations so we can generate a PGroup without duplicates."
+				"code" : "cohortDict := Dictionary new.\rregistry := BellairsExamples new bellairsRegistry.\rregistry workshops\r\tdo: [ :w | \r\t\tw participations\r\t\t\tdo: [ :p1 | \r\t\t\t\tw participations\r\t\t\t\t\tdo: [ :p2 | \r\t\t\t\t\t\tp1 person = p2 person\r\t\t\t\t\t\t\tifFalse: [ | pair |\r\t\t\t\t\t\t\t\tpair := {p1 person.\r\t\t\t\t\t\t\t\t\t\tp2 person} asSet.\r\t\t\t\t\t\t\t\t(cohortDict at: pair ifAbsentPut: OrderedCollection new) add: p1 ] ] ] ].\r(cohortDict associations sort: [ :a :b | a value size > b value size ])\r\tcollect: [ :kv | kv value size -> kv key ]"
 			},
 			{
 				"__type" : "textSnippet",
@@ -174,7 +137,7 @@
 					"__type" : "time",
 					"time" : {
 						"__type" : "dateAndTime",
-						"dateAndTimeString" : "2026-03-01T09:05:37.591426-04:00"
+						"dateAndTimeString" : "2026-03-01T12:08:21.32966-04:00"
 					}
 				},
 				"uid" : {
@@ -184,7 +147,7 @@
 				"paragraphStyle" : {
 					"__type" : "textStyle"
 				},
-				"string" : "For a given person or set of persons, we want to extract the counts"
+				"string" : "For a given person or set of persons, we want to extract the counts."
 			}
 		]
 	},
