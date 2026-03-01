@@ -183,7 +183,7 @@
 								"__type" : "time",
 								"time" : {
 									"__type" : "dateAndTime",
-									"dateAndTimeString" : "2025-11-17T10:07:46.651405+01:00"
+									"dateAndTimeString" : "2026-03-01T08:42:37.915054-04:00"
 								}
 							},
 							"uid" : {
@@ -242,7 +242,7 @@
 					"__type" : "time",
 					"time" : {
 						"__type" : "dateAndTime",
-						"dateAndTimeString" : "2025-10-17T12:29:44.56555+02:00"
+						"dateAndTimeString" : "2026-03-01T08:42:42.76543-04:00"
 					}
 				},
 				"editEmail" : {
@@ -253,17 +253,17 @@
 					"__type" : "time",
 					"time" : {
 						"__type" : "dateAndTime",
-						"dateAndTimeString" : "2025-10-17T12:29:44.56555+02:00"
+						"dateAndTimeString" : "2026-03-01T08:42:48.514638-04:00"
 					}
 				},
 				"uid" : {
 					"__type" : "uid",
-					"uidString" : "Ftlb47n9DQCoulM8BZyZog=="
+					"uidString" : "/0Emn1yTSnibYWshG9hITw=="
 				},
 				"paragraphStyle" : {
 					"__type" : "textStyle"
 				},
-				"string" : ""
+				"string" : "[[Bellairs Heat Map]]"
 			},
 			{
 				"__type" : "textSnippet",

@@ -18,7 +18,7 @@
 					"__type" : "time",
 					"time" : {
 						"__type" : "dateAndTime",
-						"dateAndTimeString" : "2025-10-22T14:22:02.221309+02:00"
+						"dateAndTimeString" : "2026-03-01T08:42:52.329678-04:00"
 					}
 				},
 				"editEmail" : {
@@ -29,92 +29,17 @@
 					"__type" : "time",
 					"time" : {
 						"__type" : "dateAndTime",
-						"dateAndTimeString" : "2025-10-22T14:23:23.110247+02:00"
+						"dateAndTimeString" : "2026-03-01T08:43:49.814552-04:00"
 					}
 				},
 				"uid" : {
 					"__type" : "uid",
-					"uidString" : "+YjIGSD+DQCCOtwFCe8ZiA=="
+					"uidString" : "cPGW6jIZR8WjpFT/WmoGWg=="
 				},
 				"paragraphStyle" : {
 					"__type" : "textStyle"
 				},
-				"string" : "[[Bellairs Workshop 2026]] "
-			},
-			{
-				"__type" : "textSnippet",
-				"children" : {
-					"__type" : "snippets",
-					"items" : [
-						{
-							"__type" : "textSnippet",
-							"children" : {
-								"__type" : "snippets",
-								"items" : [ ]
-							},
-							"createEmail" : {
-								"__type" : "email",
-								"emailString" : "<unknown>"
-							},
-							"createTime" : {
-								"__type" : "time",
-								"time" : {
-									"__type" : "dateAndTime",
-									"dateAndTimeString" : "2025-11-12T15:37:24.673221+01:00"
-								}
-							},
-							"editEmail" : {
-								"__type" : "email",
-								"emailString" : "<unknown>"
-							},
-							"editTime" : {
-								"__type" : "time",
-								"time" : {
-									"__type" : "dateAndTime",
-									"dateAndTimeString" : "2025-11-12T15:37:27.0354+01:00"
-								}
-							},
-							"uid" : {
-								"__type" : "uid",
-								"uidString" : "ZTSWcMj/DQC5qEoiCHXAGg=="
-							},
-							"paragraphStyle" : {
-								"__type" : "textStyle"
-							},
-							"string" : "[[Minimal parsing example]]"
-						}
-					]
-				},
-				"createEmail" : {
-					"__type" : "email",
-					"emailString" : "<unknown>"
-				},
-				"createTime" : {
-					"__type" : "time",
-					"time" : {
-						"__type" : "dateAndTime",
-						"dateAndTimeString" : "2025-10-17T12:09:25.498269+02:00"
-					}
-				},
-				"editEmail" : {
-					"__type" : "email",
-					"emailString" : "<unknown>"
-				},
-				"editTime" : {
-					"__type" : "time",
-					"time" : {
-						"__type" : "dateAndTime",
-						"dateAndTimeString" : "2025-10-22T14:22:50.785715+02:00"
-					}
-				},
-				"uid" : {
-					"__type" : "uid",
-					"uidString" : "Hk8Kqrn9DQCHBrl4BZyZog=="
-				},
-				"paragraphStyle" : {
-					"__type" : "textStyle"
-				},
-				"string" : "[[Bellairs Case Study]] "
+				"string" : "At the workshop, Sebastian Proksch asked how one would visualize frequently occurring pairs of people at Bellairs, possibly as a Heat Map."
 			},
 			{
 				"__type" : "textSnippet",
@@ -130,7 +55,7 @@
 					"__type" : "time",
 					"time" : {
 						"__type" : "dateAndTime",
-						"dateAndTimeString" : "2025-10-22T14:20:45.494947+02:00"
+						"dateAndTimeString" : "2026-03-01T08:44:27.665279-04:00"
 					}
 				},
 				"editEmail" : {
@@ -141,61 +66,23 @@
 					"__type" : "time",
 					"time" : {
 						"__type" : "dateAndTime",
-						"dateAndTimeString" : "2025-10-22T14:20:54.75061+02:00"
+						"dateAndTimeString" : "2026-03-01T08:44:39.861126-04:00"
 					}
 				},
 				"uid" : {
 					"__type" : "uid",
-					"uidString" : "Q8k1FSD+DQCBrA4pCe8ZiA=="
+					"uidString" : "OuJtDkeGTmCu8VZgqmMj6Q=="
 				},
 				"paragraphStyle" : {
 					"__type" : "textStyle"
 				},
-				"string" : "[[Bellairs To Do list]] "
+				"string" : "First let's collect the pairs of people."
 			},
 			{
-				"__type" : "textSnippet",
+				"__type" : "pharoSnippet",
 				"children" : {
 					"__type" : "snippets",
-					"items" : [
-						{
-							"__type" : "textSnippet",
-							"children" : {
-								"__type" : "snippets",
-								"items" : [ ]
-							},
-							"createEmail" : {
-								"__type" : "email",
-								"emailString" : "<unknown>"
-							},
-							"createTime" : {
-								"__type" : "time",
-								"time" : {
-									"__type" : "dateAndTime",
-									"dateAndTimeString" : "2025-11-17T10:07:39.123763+01:00"
-								}
-							},
-							"editEmail" : {
-								"__type" : "email",
-								"emailString" : "<unknown>"
-							},
-							"editTime" : {
-								"__type" : "time",
-								"time" : {
-									"__type" : "dateAndTime",
-									"dateAndTimeString" : "2026-03-01T08:42:37.915054-04:00"
-								}
-							},
-							"uid" : {
-								"__type" : "uid",
-								"uidString" : "Z417aigADgCcZiqLADTf3w=="
-							},
-							"paragraphStyle" : {
-								"__type" : "textStyle"
-							},
-							"string" : "[[Bellairs UML Scenery]]"
-						}
-					]
+					"items" : [ ]
 				},
 				"createEmail" : {
 					"__type" : "email",
@@ -205,7 +92,7 @@
 					"__type" : "time",
 					"time" : {
 						"__type" : "dateAndTime",
-						"dateAndTimeString" : "2025-10-22T14:36:51.34221+02:00"
+						"dateAndTimeString" : "2026-03-01T08:43:51.490821-04:00"
 					}
 				},
 				"editEmail" : {
@@ -216,17 +103,14 @@
 					"__type" : "time",
 					"time" : {
 						"__type" : "dateAndTime",
-						"dateAndTimeString" : "2025-10-22T14:37:16.913158+02:00"
+						"dateAndTimeString" : "2026-03-01T09:00:38.905029-04:00"
 					}
 				},
 				"uid" : {
 					"__type" : "uid",
-					"uidString" : "pHHHTiD+DQCVw+m+Ce8ZiA=="
+					"uidString" : "bwhZTHAtTAGavkAJIvn7nw=="
 				},
-				"paragraphStyle" : {
-					"__type" : "textStyle"
-				},
-				"string" : "[[Bellairs 2026 slideshow]] "
+				"code" : "cohortDict := Dictionary new.\rregistry := BellairsExamples new bellairsRegistry.\rregistry workshops\r\tdo: [ :w | \r\t\tw participations\r\t\t\tdo: [ :p1 | \r\t\t\t\tw participations\r\t\t\t\t\tdo: [ :p2 | \r\t\t\t\t\t\tp1 = p2\r\t\t\t\t\t\t\tifFalse: [ | pair |\r\t\t\t\t\t\t\t\tpair := {p1 person.\r\t\t\t\t\t\t\t\t\t\tp2 person} asSet.\r\t\t\t\t\t\t\t\t(cohortDict at: pair ifAbsentPut: OrderedCollection new)\r\t\t\t\t\t\t\t\t\taddAll: {p1.\r\t\t\t\t\t\t\t\t\t\t\tp2} ] ] ] ].\rcohortDict associations sort: [:a :b | a value size > b value size ]"
 			},
 			{
 				"__type" : "textSnippet",
@@ -242,7 +126,7 @@
 					"__type" : "time",
 					"time" : {
 						"__type" : "dateAndTime",
-						"dateAndTimeString" : "2025-10-17T12:09:07.021449+02:00"
+						"dateAndTimeString" : "2026-03-01T09:02:02.984328-04:00"
 					}
 				},
 				"editEmail" : {
@@ -253,17 +137,54 @@
 					"__type" : "time",
 					"time" : {
 						"__type" : "dateAndTime",
-						"dateAndTimeString" : "2025-10-17T12:09:07.021449+02:00"
+						"dateAndTimeString" : "2026-03-01T09:06:31.912304-04:00"
 					}
 				},
 				"uid" : {
 					"__type" : "uid",
-					"uidString" : "t8o3qbn9DQCHBeauBZyZog=="
+					"uidString" : "wdaALfwfT6q7QMwSUs6sog=="
 				},
 				"paragraphStyle" : {
 					"__type" : "textStyle"
 				},
-				"string" : ""
+				"string" : "*To do:* We are missing equality tests for all the domain objects, so we can't easily eliminate duplicates.\nWe need this at least for participations so we can generate a PGroup without duplicates."
+			},
+			{
+				"__type" : "textSnippet",
+				"children" : {
+					"__type" : "snippets",
+					"items" : [ ]
+				},
+				"createEmail" : {
+					"__type" : "email",
+					"emailString" : "<unknown>"
+				},
+				"createTime" : {
+					"__type" : "time",
+					"time" : {
+						"__type" : "dateAndTime",
+						"dateAndTimeString" : "2026-03-01T09:05:01.986265-04:00"
+					}
+				},
+				"editEmail" : {
+					"__type" : "email",
+					"emailString" : "<unknown>"
+				},
+				"editTime" : {
+					"__type" : "time",
+					"time" : {
+						"__type" : "dateAndTime",
+						"dateAndTimeString" : "2026-03-01T09:05:37.591426-04:00"
+					}
+				},
+				"uid" : {
+					"__type" : "uid",
+					"uidString" : "MR0IgZn3Tz+dfFIpciXiPQ=="
+				},
+				"paragraphStyle" : {
+					"__type" : "textStyle"
+				},
+				"string" : "For a given person or set of persons, we want to extract the counts"
 			}
 		]
 	},
@@ -275,7 +196,7 @@
 		"__type" : "time",
 		"time" : {
 			"__type" : "dateAndTime",
-			"dateAndTimeString" : "2025-10-17T12:09:15.729146+02:00"
+			"dateAndTimeString" : "2026-03-01T08:42:52.122201-04:00"
 		}
 	},
 	"editEmail" : {
@@ -286,15 +207,15 @@
 		"__type" : "time",
 		"time" : {
 			"__type" : "dateAndTime",
-			"dateAndTimeString" : "2025-10-17T12:09:15.729146+02:00"
+			"dateAndTimeString" : "2026-03-01T08:42:52.122201-04:00"
 		}
 	},
 	"pageType" : {
 		"__type" : "namedPage",
-		"title" : "Bellairs Workshop ToC"
+		"title" : "Bellairs Heat Map"
 	},
 	"uid" : {
 		"__type" : "uuid",
-		"uuid" : "b65237a9-b9fd-0d00-8704-ac12059c99a2"
+		"uuid" : "eb0586c4-eb62-453a-80b5-21c4a26f8e37"
 	}
 }
